@@ -14,3 +14,7 @@ We build an Emulation Server at IPK that is able to freely read in information m
 # Open Source Emulation Server solutions
 We tested and configured different open source Emulation Servers from the Unified Automation which contain hard coded information models which can be tested against by the Validation Adapter and is an output product.
 
+## Link to the Open Source Emulation Server solutions
+As already stated you can find open source server solutions for example from the Unified Automation which can be freely configured. Every Server also contains a detailed description how to configure and use them. Please notice you have to register at Unified Automation free of charge.
+Link: https://www.unified-automation.com/downloads/opc-ua-servers.html
+
