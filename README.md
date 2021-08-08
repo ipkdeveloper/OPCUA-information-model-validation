@@ -2,7 +2,7 @@
 # IPK Fraunhofer Berlin
 
 # Description to the Deviation Analyser
-The Deviation Analyser is a tool that shows the output of the Validation Adapter and filters and displays erros and deviations between the information models that were read in by the Validation Adapter and the Emulation Server.
+The Deviation Analyser is a tool that shows the output of the Validation Adapter and filters and displays erros and deviations between the information models that were read in by the Validation Adapter and the Emulation Server. The tool will automatically open after completely running the Validation Adapter.
 
 # Description to the Validation Adapter
 The Validation Adapter was build to read in information models through their node structure and tests the read in information models against information models from server side.
