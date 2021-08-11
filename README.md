@@ -1,4 +1,4 @@
-# OPCUA-information-model-validation-adapter
+# OPCUA informationmodel ValidationAdapter
 # IPK Fraunhofer Berlin
 
 # Description for the Deviation Analyser
