@@ -16,7 +16,7 @@ With the TestConfiguration.xml the test can be configured. OPC UA uses the Inter
 ## ValidationAdapter.jar
 After the configuration for the next test run has been made via the AdapterConfig.properties and TestConfiguration.xml The validation is performed by executing ValidationAdapter.jar.
 
-## Evaluation and resutls
+## Evaluation and results
 A validation process is completed with the creation of three files. 
 - The "LogFile.json" is a file that contains information about the validation process
 -  the "LogFile + Timestamp.xml" contains information about the results of the validation 
