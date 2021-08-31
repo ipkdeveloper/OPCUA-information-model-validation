@@ -28,6 +28,12 @@ We build an Emulation Server at IPK that is able to freely read in information m
 # Open Source Emulation Server solutions
 We tested and configured different open source Emulation Servers from the Unified Automation which contain hard coded information models which can be tested against by the Validation Adapter and is an output product.
 
+## Starting the Open Source Emulation Server solution: UAServerCPP/UAAnsiCServer
+After downloading and installing one of the open source servers run the "uaservercpp.exe" or "uaserverc.exe" under the installed folder "\UaCPPServer\bin" or "\UaAnsiCServer\bin". A new window will show up which already opens the server under the stated URL: "opc.tcp://[PC/Machine-Name]:[Port-Number]". These two informations are necessary for the configuration of the "TestConfiguration.xml"-file from the ValidationAdapter. The "PC/Machine-Name" of your PC/Machine will be the ip and the "Port-Number" will be the port for the "TestConfiguration.xml"-file. 
+  
+ ## Configuration of the Open Source Emulation Server solutions: UAServerCPP
+You can also configure the UAServerCPP via the "ServerConfig.xml" which can be found under "\UaCPPServer\bin" where you also found the "uaservercpp.exe" to start the server or use the "admindialog.exe" under "\UaCPPServer\bin\admindialog" to configure the server ip and port through a graphical surface. If you use the graphical surface you can change the network to local/localhost choosing "Local Only" instead "All" under the Network Adapter. The "PC/Machine-Name" of your PC/Machine which will be the ip to connect to can be changed under Hostname/IP and the Port can be changed too but please be aware that the port needs to be free, meaning no service or program already uses this port.
+  
 # Link to the Open Source Emulation Server solutions
 As already stated you can find open source server solutions for example from the Unified Automation which can be freely configured. Every Server also contains a detailed description how to configure and use them. Please notice you have to register at Unified Automation free of charge.
 Link: https://www.unified-automation.com/downloads/opc-ua-servers.html
