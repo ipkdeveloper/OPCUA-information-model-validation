@@ -1,5 +1,9 @@
+#
+<a href="https://www.ipk.fraunhofer.de/">
+    <img src="https://www.ipk.fraunhofer.de/content/dam/ipk/IPK_Hauptseite/logos/logo-fraunhofer-ipk.png" align="right" height="60"  title="Fraunhofer IPK"/>
+</a>
+
 # OPCUA informationmodel ValidationAdapter
-# IPK Fraunhofer Berlin
 
 ## About the project
 The following described project comprises of three main elements: The Validation Adapter, Deviation Analyser and an Emulation Server.
