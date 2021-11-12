@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<UANodeSet xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+    <UAObject BrowseName="2:GESI" NodeId="ns=2;s=5005 Node is not implemented in Server" ParentNodeId="i=85">
+        <DisplayName>GESI</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="Organizes">i=85</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=10019</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="2:IPK" NodeId="ns=2;s=10019 Node is not implemented in Server" ParentNodeId="ns=2;s=5005">
+        <DisplayName>IPK</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=5005</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22427</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22424</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19179</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19020</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=999</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="2:GESI" NodeId="ns=2;s=999 Node is not implemented in Server" ParentNodeId="ns=2;s=10019">
+        <DisplayName>GESI</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=10019</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="2:CameraOut.default" NodeId="ns=2;s=22427 Node is not implemented in Server" ParentNodeId="ns=2;s=10019">
+        <DisplayName>CameraOut.default</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=10019</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="2:CameraMWD.CameraMWD" NodeId="ns=2;s=22424 Node is not implemented in Server" ParentNodeId="ns=2;s=10019">
+        <DisplayName>CameraMWD.CameraMWD</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=10019</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="2:1" NodeId="ns=2;s=19179 Node is not implemented in Server" ParentNodeId="ns=2;s=10019">
+        <DisplayName>1</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=10019</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20783</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19179.addPackage</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="2:F000061" NodeId="ns=2;s=20783 Node is not implemented in Server" ParentNodeId="ns=2;s=19179">
+        <DisplayName>F000061</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=19179</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20783.area</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20783.cameraName</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20783.config</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20783.description</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20783.error</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20783.frame</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20783.local</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20783.order</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20783.refDistX</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20783.refDistY</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20783.result</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20783.status</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20783.picture</Reference>
+        </References>
+    </UAObject>
+    <UAMethod BrowseName="2:addPackage" NodeId="ns=2;s=19179.addPackage Node is not implemented in Server" ParentNodeId="ns=2;s=19179">
+        <DisplayName>addPackage</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=19179</Reference>
+            <Reference ReferenceType="HasProperty">ns=2;s=19179.addPackage.InputArguments</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19179.addPackage.OutputArguments</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable BrowseName="2:InputArguments" DataType="UInt64" NodeId="ns=2;s=19179.addPackage.InputArguments Node is not implemented in Server" ParentNodeId="ns=2;s=19179.addPackage">
+        <DisplayName>InputArguments</DisplayName>
+        <Description>InputArguments</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=2;s=19179.addPackage</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:UInt64>0</uax:UInt64>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="2:OutputArgument" DataType="UInt64" NodeId="ns=2;s=19179.addPackage.OutputArguments Node is not implemented in Server" ParentNodeId="ns=2;s=19179.addPackage">
+        <DisplayName>OutputArgument</DisplayName>
+        <Description>OutputArgument</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=19179.addPackage</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:UInt64>0</uax:UInt64>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="2:area" DataType="Double" NodeId="ns=2;s=20783.area Node is not implemented in Server" ParentNodeId="ns=2;s=20783">
+        <DisplayName>area</DisplayName>
+        <Description>area</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=20783</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Double>0.0</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="2:cameraName" DataType="String" NodeId="ns=2;s=20783.cameraName Node is not implemented in Server" ParentNodeId="ns=2;s=20783">
+        <DisplayName>cameraName</DisplayName>
+        <Description>cameraName</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=20783</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:String>Null</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="2:config" DataType="String" NodeId="ns=2;s=20783.config Node is not implemented in Server" ParentNodeId="ns=2;s=20783">
+        <DisplayName>config</DisplayName>
+        <Description>config</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=20783</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:String>Null</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="2:description" DataType="String" NodeId="ns=2;s=20783.description Node is not implemented in Server" ParentNodeId="ns=2;s=20783">
+        <DisplayName>description</DisplayName>
+        <Description>description</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=20783</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:String>Null</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="2:error" DataType="String" NodeId="ns=2;s=20783.error Node is not implemented in Server" ParentNodeId="ns=2;s=20783">
+        <DisplayName>error</DisplayName>
+        <Description>error</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=20783</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:String>Null</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="2:frame" DataType="Int32" NodeId="ns=2;s=20783.frame Node is not implemented in Server" ParentNodeId="ns=2;s=20783">
+        <DisplayName>frame</DisplayName>
+        <Description>frame</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=20783</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Int32>0</uax:Int32>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="2:local" DataType="Boolean" NodeId="ns=2;s=20783.local Node is not implemented in Server" ParentNodeId="ns=2;s=20783">
+        <DisplayName>local</DisplayName>
+        <Description>local</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=20783</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Boolean>false</uax:Boolean>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="2:order" DataType="String" NodeId="ns=2;s=20783.order Node is not implemented in Server" ParentNodeId="ns=2;s=20783">
+        <DisplayName>order</DisplayName>
+        <Description>order</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=20783</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:String>Null</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="2:refDistX" DataType="Double" NodeId="ns=2;s=20783.refDistX Node is not implemented in Server" ParentNodeId="ns=2;s=20783">
+        <DisplayName>refDistX</DisplayName>
+        <Description>refDistX</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=20783</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Double>0.0</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="2:refDistY" DataType="Double" NodeId="ns=2;s=20783.refDistY Node is not implemented in Server" ParentNodeId="ns=2;s=20783">
+        <DisplayName>refDistY</DisplayName>
+        <Description>refDistY</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=20783</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Double>0.0</uax:Double>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="2:result" DataType="String" NodeId="ns=2;s=20783.result Node is not implemented in Server" ParentNodeId="ns=2;s=20783">
+        <DisplayName>result</DisplayName>
+        <Description>result</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=20783</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:String>Null</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="2:status" DataType="Int32" NodeId="ns=2;s=20783.status Node is not implemented in Server" ParentNodeId="ns=2;s=20783">
+        <DisplayName>status</DisplayName>
+        <Description>status</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=20783</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Int32>0</uax:Int32>
+        </Value>
+    </UAVariable>
+    <UAObject BrowseName="2:picture" NodeId="ns=2;s=20783.picture Node is not implemented in Server" ParentNodeId="ns=2;s=20783">
+        <DisplayName>picture</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=20783</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="2:CamOR" NodeId="ns=2;s=19020 Node is not implemented in Server" ParentNodeId="ns=2;s=10019">
+        <DisplayName>CamOR</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=10019</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19020.addPackage</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19020.remPackage</Reference>
+        </References>
+    </UAObject>
+    <UAMethod BrowseName="2:addPackage" NodeId="ns=2;s=19020.addPackage Node is not implemented in Server" ParentNodeId="ns=2;s=19020">
+        <DisplayName>addPackage</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=19020</Reference>
+            <Reference ReferenceType="HasProperty">ns=2;s=19020.addPackage.InputArguments</Reference>
+            <Reference ReferenceType="HasProperty">ns=2;s=19020.addPackage.OutputArguments</Reference>
+        </References>
+    </UAMethod>
+    <UAMethod BrowseName="2:remPackage" NodeId="ns=2;s=19020.remPackage Node is not implemented in Server" ParentNodeId="ns=2;s=19020">
+        <DisplayName>remPackage</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=19020</Reference>
+            <Reference ReferenceType="HasProperty">ns=2;s=19020.remPackage.addPackage</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable AccessLevel=" not in the specification" ArrayDimensions=" not in the specification" BrowseName="0:InputArguments" DataType="Argument" NodeId="ns=0;i=11493 different to specification" ParentNodeId="ns=0;i=11492 different to specification" ValueRank=" different to specification">
+        <DisplayName>InputArguments</DisplayName>
+        <Description> different to specification</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11492</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="2:InputArguments" DataType="Int32" NodeId="ns=2;s=19020.addPackage.InputArguments Node is not implemented in Server" ParentNodeId="ns=2;s=19020.addPackage">
+        <DisplayName>InputArguments</DisplayName>
+        <Description>InputArguments</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=2;s=19020.addPackage</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:Int32>0</uax:Int32>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="2:OutputArguments" DataType="Int32" NodeId="ns=2;s=19020.addPackage.OutputArguments Node is not implemented in Server" ParentNodeId="ns=2;s=19020.addPackage">
+        <DisplayName>OutputArguments</DisplayName>
+        <Description>OutputArguments</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=2;s=19020.addPackage</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:Int32>0</uax:Int32>
+        </Value>
+    </UAVariable>
+</UANodeSet>

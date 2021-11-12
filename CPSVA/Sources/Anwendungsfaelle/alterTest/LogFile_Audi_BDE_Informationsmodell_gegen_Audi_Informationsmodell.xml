@@ -1,0 +1,1521 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<UANodeSet xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+    <UADataType BrowseName="1:TargetValueType" NodeId="ns=1;i=3010 Node is not implemented in Server">
+        <DisplayName>TargetValueType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6090</Reference>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=29</Reference>
+        </References>
+        <Definition Name="1:TargetValueType">
+            <Field Name="CycleTime" Value="0"/>
+            <Field Name="Counter" Value="1"/>
+        </Definition>
+    </UADataType>
+    <UAVariable ArrayDimensions="2" BrowseName="EnumStrings" DataType="LocalizedText" NodeId="ns=1;i=6090 Node is not implemented in Server" ParentNodeId="ns=1;i=3010" ValueRank="1">
+        <DisplayName>EnumStrings</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=3010</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UADataType BrowseName="1:ErrorDataType" NodeId="ns=1;i=3006 Node is not implemented in Server">
+        <DisplayName>ErrorDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5017</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5019</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5018</Reference>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=22</Reference>
+        </References>
+        <Definition Name="1:ErrorDataType">
+            <Field DataType="String" Name="ErrorNamespace"/>
+            <Field DataType="String" Name="ErrorCode"/>
+            <Field DataType="String" Name="ErrorDescription"/>
+            <Field DataType="Byte" Name="ErrorType"/>
+        </Definition>
+    </UADataType>
+    <UAVariable BrowseName="1:ErrorDataType" DataType="String" NodeId="ns=1;i=6032 Node is not implemented in Server" ParentNodeId="ns=1;i=6004">
+        <DisplayName>ErrorDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5017</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6004</Reference>
+        </References>
+        <Value>
+            <uax:String>ErrorDataType</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:ErrorDataType" DataType="String" NodeId="ns=1;i=6033 Node is not implemented in Server" ParentNodeId="ns=1;i=6006">
+        <DisplayName>ErrorDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5018</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6006</Reference>
+        </References>
+        <Value>
+            <uax:String>//xs:element[@name='ErrorDataType']</uax:String>
+        </Value>
+    </UAVariable>
+    <UADataType BrowseName="1:ProductionStatusDataType" NodeId="ns=1;i=3002 Node is not implemented in Server">
+        <DisplayName>ProductionStatusDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5003</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5002</Reference>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=12755</Reference>
+        </References>
+        <Definition Name="1:ProductionStatusDataType">
+            <Field Name="ProductionRunning" Value="0"/>
+            <Field Name="CollectiveFault" Value="1"/>
+            <Field Name="EmergencyStop" Value="2"/>
+            <Field Name="ManualMode" Value="3"/>
+            <Field Name="LoadVoltageOffline" Value="4"/>
+            <Field Name="CycleTimeViolation" Value="5"/>
+            <Field Name="WaitingForPart" Value="6"/>
+            <Field Name="OutletOccupied" Value="7"/>
+            <Field Name="TechnicalMalfunction" Value="8"/>
+            <Field Name="TechnicalMalfunctionResolved" Value="9"/>
+            <Field Name="OrganisationalMalfunction" Value="10"/>
+            <Field Name="OrgnisationalMalfunctionResolved" Value="11"/>
+            <Field Name="ToolLoss" Value="12"/>
+            <Field Name="MachineOn" Value="13"/>
+            <Field Name="MachineOff" Value="14"/>
+            <Field Name="Retool" Value="15"/>
+            <Field Name="Prod_mit_abgew_Funkt " SymbolicName="Prod_mit_abgew_Funkt_" Value="16"/>
+            <Field Name="Standby" Value="17"/>
+        </Definition>
+    </UADataType>
+    <UADataType BrowseName="1:SwitchingListDataType" NodeId="ns=1;i=3009 Node is not implemented in Server">
+        <DisplayName>SwitchingListDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5027</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5029</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5028</Reference>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=12755</Reference>
+        </References>
+        <Definition Name="1:SwitchingListDataType">
+            <Field Name="PowerOrMainSwitchOn" Value="0"/>
+            <Field Name="ProductionOn" Value="1"/>
+            <Field Name="ProcessDeviceOn" Value="2"/>
+            <Field Name="MorningShift" Value="3"/>
+            <Field Name="LateShift" Value="4"/>
+            <Field Name="NightShift" Value="5"/>
+            <Field Name="IndependentShift" Value="6"/>
+            <Field Name="BreakMorningShift" Value="7"/>
+            <Field Name="BreakLateShift" Value="8"/>
+            <Field Name="BreakNightShift" Value="9"/>
+        </Definition>
+    </UADataType>
+    <UADataType BrowseName="1:ProcessCharacteristicsDataType" NodeId="ns=1;i=3008 Node is not implemented in Server">
+        <DisplayName>ProcessCharacteristicsDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5024</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5026</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5025</Reference>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=22</Reference>
+        </References>
+        <Definition Name="1:ProcessCharacteristicsDataType">
+            <Field DataType="String" Name="ItemDesignation"/>
+            <Field DataType="UInt32" Name="ProcessTime"/>
+        </Definition>
+    </UADataType>
+    <UAVariable BrowseName="1:ProcessCharacteristicsDataType" DataType="String" NodeId="ns=1;i=6076 Node is not implemented in Server" ParentNodeId="ns=1;i=6004">
+        <DisplayName>ProcessCharacteristicsDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5024</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6004</Reference>
+        </References>
+        <Value>
+            <uax:String>ProcessCharacteristicsDataType</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:ProcessCharacteristicsDataType" DataType="String" NodeId="ns=1;i=6077 Node is not implemented in Server" ParentNodeId="ns=1;i=6006">
+        <DisplayName>ProcessCharacteristicsDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5025</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6006</Reference>
+        </References>
+        <Value>
+            <uax:String>//xs:element[@name='ProcessCharacteristicsDataType']</uax:String>
+        </Value>
+    </UAVariable>
+    <UADataType BrowseName="1:ProcessCounterDataType" NodeId="ns=1;i=3007 Node is not implemented in Server">
+        <DisplayName>ProcessCounterDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5021</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5023</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5022</Reference>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=22</Reference>
+        </References>
+        <Definition Name="1:ProcessCounterDataType">
+            <Field DataType="String" Name="ItemDesignation"/>
+            <Field DataType="UInt64" Name="Counter"/>
+            <Field DataType="UInt64" Name="CounterAccepted"/>
+            <Field DataType="UInt64" Name="CounterRejected"/>
+        </Definition>
+    </UADataType>
+    <UAVariable BrowseName="1:ProcessCounterDataType" DataType="String" NodeId="ns=1;i=6074 Node is not implemented in Server" ParentNodeId="ns=1;i=6004">
+        <DisplayName>ProcessCounterDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5021</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6004</Reference>
+        </References>
+        <Value>
+            <uax:String>ProcessCounterDataType</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:ProcessCounterDataType" DataType="String" NodeId="ns=1;i=6075 Node is not implemented in Server" ParentNodeId="ns=1;i=6006">
+        <DisplayName>ProcessCounterDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5022</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6006</Reference>
+        </References>
+        <Value>
+            <uax:String>//xs:element[@name='ProcessCounterDataType']</uax:String>
+        </Value>
+    </UAVariable>
+    <UADataType BrowseName="1:RobotStatusDataType" NodeId="ns=1;i=3004 Node is not implemented in Server">
+        <DisplayName>RobotStatusDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5009</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5011</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5010</Reference>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=22</Reference>
+        </References>
+        <Definition Name="1:RobotStatusDataType">
+            <Field DataType="Boolean" Name="Status"/>
+            <Field DataType="String" Name="ItemDesignation"/>
+        </Definition>
+    </UADataType>
+    <UAVariable BrowseName="1:RobotStatusDataType" DataType="String" NodeId="ns=1;i=6020 Node is not implemented in Server" ParentNodeId="ns=1;i=6004">
+        <DisplayName>RobotStatusDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5009</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6004</Reference>
+        </References>
+        <Value>
+            <uax:String>RobotStatusDataType</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:RobotStatusDataType" DataType="String" NodeId="ns=1;i=6021 Node is not implemented in Server" ParentNodeId="ns=1;i=6006">
+        <DisplayName>RobotStatusDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5010</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6006</Reference>
+        </References>
+        <Value>
+            <uax:String>//xs:element[@name='RobotStatusDataType']</uax:String>
+        </Value>
+    </UAVariable>
+    <UADataType BrowseName="1:TargetValueDataType" NodeId="ns=1;i=3011 Node is not implemented in Server">
+        <DisplayName>TargetValueDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5030</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5032</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5031</Reference>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=22</Reference>
+        </References>
+        <Definition Name="1:TargetValueDataType">
+            <Field DataType="TargetValueType" Name="TargetValueType"/>
+            <Field DataType="UInt32" Name="TargetValue"/>
+        </Definition>
+    </UADataType>
+    <UAVariable BrowseName="1:TargetValueDataType" DataType="String" NodeId="ns=1;i=6085 Node is not implemented in Server" ParentNodeId="ns=1;i=6004">
+        <DisplayName>TargetValueDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5030</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6004</Reference>
+        </References>
+        <Value>
+            <uax:String>TargetValueDataType</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:TargetValueDataType" DataType="String" NodeId="ns=1;i=6086 Node is not implemented in Server" ParentNodeId="ns=1;i=6006">
+        <DisplayName>TargetValueDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5031</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6006</Reference>
+        </References>
+        <Value>
+            <uax:String>//xs:element[@name='TargetValueDataType']</uax:String>
+        </Value>
+    </UAVariable>
+    <UADataType BrowseName="1:TypeCounterDataType" NodeId="ns=1;i=3003 Node is not implemented in Server">
+        <DisplayName>TypeCounterDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5005</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5007</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5006</Reference>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=22</Reference>
+        </References>
+        <Definition Name="1:TypeCounterDataType">
+            <Field DataType="UInt32" Name="Counter"/>
+            <Field DataType="String" MaxStringLength="50" Name="Type"/>
+        </Definition>
+    </UADataType>
+    <UAVariable BrowseName="1:TypeCounterDataType" DataType="String" NodeId="ns=1;i=6015 Node is not implemented in Server" ParentNodeId="ns=1;i=6004">
+        <DisplayName>TypeCounterDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5005</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6004</Reference>
+        </References>
+        <Value>
+            <uax:String>TypeCounterDataType</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:TypeCounterDataType" DataType="String" NodeId="ns=1;i=6016 Node is not implemented in Server" ParentNodeId="ns=1;i=6006">
+        <DisplayName>TypeCounterDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5006</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6006</Reference>
+        </References>
+        <Value>
+            <uax:String>//xs:element[@name='TypeCounterDataType']</uax:String>
+        </Value>
+    </UAVariable>
+    <UADataType BrowseName="1:VersionDataType" NodeId="ns=1;i=3005 Node is not implemented in Server">
+        <DisplayName>VersionDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5013</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5015</Reference>
+            <Reference ReferenceType="HasEncoding">ns=1;i=5014</Reference>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=22</Reference>
+        </References>
+        <Definition Name="1:VersionDataType">
+            <Field DataType="UInt16" Name="Major"/>
+            <Field DataType="UInt16" Name="Minor"/>
+            <Field DataType="UInt16" Name="Revision"/>
+        </Definition>
+    </UADataType>
+    <UAVariable BrowseName="1:VersionDataType" DataType="String" NodeId="ns=1;i=6027 Node is not implemented in Server" ParentNodeId="ns=1;i=6004">
+        <DisplayName>VersionDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5013</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6004</Reference>
+        </References>
+        <Value>
+            <uax:String>VersionDataType</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:VersionDataType" DataType="String" NodeId="ns=1;i=6028 Node is not implemented in Server" ParentNodeId="ns=1;i=6006">
+        <DisplayName>VersionDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5014</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6006</Reference>
+        </References>
+        <Value>
+            <uax:String>//xs:element[@name='VersionDataType']</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:TypeDictionary" DataType="ByteString" NodeId="ns=1;i=6004 Node is not implemented in Server">
+        <DisplayName>TypeDictionary</DisplayName>
+        <Description>Collects the data type descriptions of http://audi.com/OpcUa/CentralIm/</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6032</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6005</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6076</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6074</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6008</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6020</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6082</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6085</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6015</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">i=93</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6027</Reference>
+        </References>
+        <Value>
+            <uax:ByteString>PG9wYzpUeXBlRGljdGlvbmFyeSB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZ
+        W1hLWluc3RhbmNlIiB4bWxuczp0bnM9Imh0dHA6Ly9hdWRpLmNvbS9PcGNVYS9DZW50cmFsS
+        W0vIiBEZWZhdWx0Qnl0ZU9yZGVyPSJMaXR0bGVFbmRpYW4iIHhtbG5zOm9wYz0iaHR0cDovL
+        29wY2ZvdW5kYXRpb24ub3JnL0JpbmFyeVNjaGVtYS8iIHhtbG5zOnVhPSJodHRwOi8vb3BjZ
+        m91bmRhdGlvbi5vcmcvVUEvIiBUYXJnZXROYW1lc3BhY2U9Imh0dHA6Ly9hdWRpLmNvbS9Pc
+        GNVYS9DZW50cmFsSW0vIj4KIDxvcGM6SW1wb3J0IE5hbWVzcGFjZT0iaHR0cDovL29wY2Zvd
+        W5kYXRpb24ub3JnL1VBLyIvPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idWE6R
+        Xh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJFcnJvckRhdGFUeXBlIj4KICA8b3BjOkZpZWxkIFR5c
+        GVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lPSJFcnJvck5hbWVzcGFjZSIvPgogIDxvcGM6R
+        mllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyYXkiIE5hbWU9IkVycm9yQ29kZSIvPgogIDxvc
+        GM6RmllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyYXkiIE5hbWU9IkVycm9yRGVzY3JpcHRpb
+        24iLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Qnl0ZSIgTmFtZT0iRXJyb3JUeXBlI
+        i8+CiA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZVR5c
+        GU9InVhOkV4dGVuc2lvbk9iamVjdCIgTmFtZT0iUHJvZHVjdGlvblN0YXR1c0RhdGFUeXBlI
+        j4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Qnl0ZVN0cmluZyIgTmFtZT0iVmFsdWUiL
+        z4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Qnl0ZVN0cmluZyIgTmFtZT0iVmFsaWRCa
+        XRzIi8+CiA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZ
+        VR5cGU9InVhOkV4dGVuc2lvbk9iamVjdCIgTmFtZT0iU3dpdGNoaW5nTGlzdERhdGFUeXBlI
+        j4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Qnl0ZVN0cmluZyIgTmFtZT0iVmFsdWUiL
+        z4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Qnl0ZVN0cmluZyIgTmFtZT0iVmFsaWRCa
+        XRzIi8+CiA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZ
+        VR5cGU9InVhOkV4dGVuc2lvbk9iamVjdCIgTmFtZT0iUHJvY2Vzc0NoYXJhY3RlcmlzdGljc
+        0RhdGFUeXBlIj4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6Q2hhckFycmF5IiBOYW1lP
+        SJJdGVtRGVzaWduYXRpb24iLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6VUludDMyI
+        iBOYW1lPSJQcm9jZXNzVGltZSIvPgogPC9vcGM6U3RydWN0dXJlZFR5cGU+CiA8b3BjOlN0c
+        nVjdHVyZWRUeXBlIEJhc2VUeXBlPSJ1YTpFeHRlbnNpb25PYmplY3QiIE5hbWU9IlByb2Nlc
+        3NDb3VudGVyRGF0YVR5cGUiPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpDaGFyQXJyY
+        XkiIE5hbWU9Ikl0ZW1EZXNpZ25hdGlvbiIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wY
+        zpVSW50NjQiIE5hbWU9IkNvdW50ZXIiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6V
+        UludDY0IiBOYW1lPSJDb3VudGVyQWNjZXB0ZWQiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lP
+        SJvcGM6VUludDY0IiBOYW1lPSJDb3VudGVyUmVqZWN0ZWQiLz4KIDwvb3BjOlN0cnVjdHVyZ
+        WRUeXBlPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idWE6RXh0ZW5zaW9uT2JqZ
+        WN0IiBOYW1lPSJSb2JvdFN0YXR1c0RhdGFUeXBlIj4KICA8b3BjOkZpZWxkIFR5cGVOYW1lP
+        SJvcGM6Qm9vbGVhbiIgTmFtZT0iU3RhdHVzIi8+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib
+        3BjOkNoYXJBcnJheSIgTmFtZT0iSXRlbURlc2lnbmF0aW9uIi8+CiA8L29wYzpTdHJ1Y3R1c
+        mVkVHlwZT4KIDxvcGM6U3RydWN0dXJlZFR5cGUgQmFzZVR5cGU9InVhOkV4dGVuc2lvbk9ia
+        mVjdCIgTmFtZT0iVGFyZ2V0VmFsdWVEYXRhVHlwZSI+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZ
+        T0idG5zOlRhcmdldFZhbHVlVHlwZSIgTmFtZT0iVGFyZ2V0VmFsdWVUeXBlIi8+CiAgPG9wY
+        zpGaWVsZCBUeXBlTmFtZT0ib3BjOlVJbnQzMiIgTmFtZT0iVGFyZ2V0VmFsdWUiLz4KIDwvb
+        3BjOlN0cnVjdHVyZWRUeXBlPgogPG9wYzpTdHJ1Y3R1cmVkVHlwZSBCYXNlVHlwZT0idWE6R
+        Xh0ZW5zaW9uT2JqZWN0IiBOYW1lPSJUeXBlQ291bnRlckRhdGFUeXBlIj4KICA8b3BjOkZpZ
+        WxkIFR5cGVOYW1lPSJvcGM6VUludDMyIiBOYW1lPSJDb3VudGVyIi8+CiAgPG9wYzpGaWVsZ
+        CBUeXBlTmFtZT0ib3BjOkNoYXJBcnJheSIgTmFtZT0iVHlwZSIvPgogPC9vcGM6U3RydWN0d
+        XJlZFR5cGU+CiA8b3BjOlN0cnVjdHVyZWRUeXBlIEJhc2VUeXBlPSJ1YTpFeHRlbnNpb25PY
+        mplY3QiIE5hbWU9IlZlcnNpb25EYXRhVHlwZSI+CiAgPG9wYzpGaWVsZCBUeXBlTmFtZT0ib
+        3BjOlVJbnQxNiIgTmFtZT0iTWFqb3IiLz4KICA8b3BjOkZpZWxkIFR5cGVOYW1lPSJvcGM6V
+        UludDE2IiBOYW1lPSJNaW5vciIvPgogIDxvcGM6RmllbGQgVHlwZU5hbWU9Im9wYzpVSW50M
+        TYiIE5hbWU9IlJldmlzaW9uIi8+CiA8L29wYzpTdHJ1Y3R1cmVkVHlwZT4KIDxvcGM6RW51b
+        WVyYXRlZFR5cGUgTGVuZ3RoSW5CaXRzPSIzMiIgTmFtZT0iVGFyZ2V0VmFsdWVUeXBlIj4KI
+        CA8b3BjOkVudW1lcmF0ZWRWYWx1ZSBOYW1lPSJDeWNsZVRpbWUiIFZhbHVlPSIwIi8+CiAgP
+        G9wYzpFbnVtZXJhdGVkVmFsdWUgTmFtZT0iQ291bnRlciIgVmFsdWU9IjEiLz4KIDwvb3BjO
+        kVudW1lcmF0ZWRUeXBlPgo8L29wYzpUeXBlRGljdGlvbmFyeT4K</uax:ByteString>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="NamespaceUri" DataType="String" NodeId="ns=1;i=6005 Node is not implemented in Server" ParentNodeId="ns=1;i=6004">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6004</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>http://audi.com/OpcUa/CentralIm/</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:ProductionStatusDataType" DataType="String" NodeId="ns=1;i=6008 Node is not implemented in Server" ParentNodeId="ns=1;i=6004">
+        <DisplayName>ProductionStatusDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5001</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6004</Reference>
+        </References>
+        <Value>
+            <uax:String>ProductionStatusDataType</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:SwitchingListDataType" DataType="String" NodeId="ns=1;i=6082 Node is not implemented in Server" ParentNodeId="ns=1;i=6004">
+        <DisplayName>SwitchingListDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5027</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6004</Reference>
+        </References>
+        <Value>
+            <uax:String>SwitchingListDataType</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:TypeDictionary" DataType="ByteString" NodeId="ns=1;i=6006 Node is not implemented in Server">
+        <DisplayName>TypeDictionary</DisplayName>
+        <Description>Collects the data type descriptions of http://audi.com/OpcUa/CentralIm/</Description>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=72</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6033</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6007</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6077</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6075</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6009</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6021</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6083</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6086</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6016</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">i=92</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6028</Reference>
+        </References>
+        <Value>
+            <uax:ByteString>PHhzOnNjaGVtYSBlbGVtZW50Rm9ybURlZmF1bHQ9InF1YWxpZmllZCIgdGFyZ2V0TmFtZXNwYWNlPSJod
+        HRwOi8vYXVkaS5jb20vT3BjVWEvQ2VudHJhbEltL1R5cGVzLnhzZCIgeG1sbnM6dG5zPSJod
+        HRwOi8vYXVkaS5jb20vT3BjVWEvQ2VudHJhbEltL1R5cGVzLnhzZCIgeG1sbnM6dWE9Imh0d
+        HA6Ly9vcGNmb3VuZGF0aW9uLm9yZy9VQS8yMDA4LzAyL1R5cGVzLnhzZCIgeG1sbnM6eHM9I
+        mh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj4KIDx4czppbXBvcnQgbmFtZXNwY
+        WNlPSJodHRwOi8vb3BjZm91bmRhdGlvbi5vcmcvVUEvMjAwOC8wMi9UeXBlcy54c2QiLz4KI
+        Dx4czpzaW1wbGVUeXBlIG5hbWU9IlRhcmdldFZhbHVlVHlwZSI+CiAgPHhzOnJlc3RyaWN0a
+        W9uIGJhc2U9InhzOnN0cmluZyI+CiAgIDx4czplbnVtZXJhdGlvbiB2YWx1ZT0iQ3ljbGVUa
+        W1lXzAiLz4KICAgPHhzOmVudW1lcmF0aW9uIHZhbHVlPSJDb3VudGVyXzEiLz4KICA8L3hzO
+        nJlc3RyaWN0aW9uPgogPC94czpzaW1wbGVUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zO
+        lRhcmdldFZhbHVlVHlwZSIgbmFtZT0iVGFyZ2V0VmFsdWVUeXBlIi8+CiA8eHM6Y29tcGxle
+        FR5cGUgbmFtZT0iTGlzdE9mVGFyZ2V0VmFsdWVUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgI
+        Dx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9I
+        nRuczpUYXJnZXRWYWx1ZVR5cGUiIG5hbWU9IlRhcmdldFZhbHVlVHlwZSIgbmlsbGFibGU9I
+        nRydWUiLz4KICA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZ
+        W50IHR5cGU9InRuczpMaXN0T2ZUYXJnZXRWYWx1ZVR5cGUiIG5hbWU9Ikxpc3RPZlRhcmdld
+        FZhbHVlVHlwZSIgbmlsbGFibGU9InRydWUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJFc
+        nJvckRhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vyc
+        z0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpzdHJpbmciIG5hbWU9IkVycm9yTmFtZXNwY
+        WNlIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlP
+        SJ4czpzdHJpbmciIG5hbWU9IkVycm9yQ29kZSIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1c
+        nM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6c3RyaW5nIiBuYW1lPSJFcnJvckRlc2Nya
+        XB0aW9uIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0e
+        XBlPSJ4czp1bnNpZ25lZEJ5dGUiIG5hbWU9IkVycm9yVHlwZSIvPgogIDwveHM6c2VxdWVuY
+        2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkVycm9yRGF0Y
+        VR5cGUiIG5hbWU9IkVycm9yRGF0YVR5cGUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMa
+        XN0T2ZFcnJvckRhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pb
+        k9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpFcnJvckRhdGFUe
+        XBlIiBuYW1lPSJFcnJvckRhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2Vxd
+        WVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZ
+        kVycm9yRGF0YVR5cGUiIG5hbWU9Ikxpc3RPZkVycm9yRGF0YVR5cGUiIG5pbGxhYmxlPSJ0c
+        nVlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iUHJvZHVjdGlvblN0YXR1c0RhdGFUeXBlI
+        j4KICA8eHM6Y29tcGxleENvbnRlbnQgbWl4ZWQ9ImZhbHNlIj4KICAgPHhzOmV4dGVuc2lvb
+        iBiYXNlPSJ1YTpPcHRpb25TZXQiPgogICAgPHhzOnNlcXVlbmNlLz4KICAgPC94czpleHRlb
+        nNpb24+CiAgPC94czpjb21wbGV4Q29udGVudD4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6Z
+        WxlbWVudCB0eXBlPSJ0bnM6UHJvZHVjdGlvblN0YXR1c0RhdGFUeXBlIiBuYW1lPSJQcm9kd
+        WN0aW9uU3RhdHVzRGF0YVR5cGUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZQc
+        m9kdWN0aW9uU3RhdHVzRGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lb
+        nQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOlByb2R1Y
+        3Rpb25TdGF0dXNEYXRhVHlwZSIgbmFtZT0iUHJvZHVjdGlvblN0YXR1c0RhdGFUeXBlIiBua
+        WxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogP
+        HhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZlByb2R1Y3Rpb25TdGF0dXNEYXRhVHlwZSIgb
+        mFtZT0iTGlzdE9mUHJvZHVjdGlvblN0YXR1c0RhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvP
+        gogPHhzOmNvbXBsZXhUeXBlIG5hbWU9IlN3aXRjaGluZ0xpc3REYXRhVHlwZSI+CiAgPHhzO
+        mNvbXBsZXhDb250ZW50IG1peGVkPSJmYWxzZSI+CiAgIDx4czpleHRlbnNpb24gYmFzZT0id
+        WE6T3B0aW9uU2V0Ij4KICAgIDx4czpzZXF1ZW5jZS8+CiAgIDwveHM6ZXh0ZW5zaW9uPgogI
+        DwveHM6Y29tcGxleENvbnRlbnQ+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgd
+        HlwZT0idG5zOlN3aXRjaGluZ0xpc3REYXRhVHlwZSIgbmFtZT0iU3dpdGNoaW5nTGlzdERhd
+        GFUeXBlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iTGlzdE9mU3dpdGNoaW5nTGlzdERhd
+        GFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgb
+        WF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpTd2l0Y2hpbmdMaXN0RGF0YVR5cGUiI
+        G5hbWU9IlN3aXRjaGluZ0xpc3REYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KICA8L3hzO
+        nNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9InRuczpMa
+        XN0T2ZTd2l0Y2hpbmdMaXN0RGF0YVR5cGUiIG5hbWU9Ikxpc3RPZlN3aXRjaGluZ0xpc3REY
+        XRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJQcm9jZ
+        XNzQ2hhcmFjdGVyaXN0aWNzRGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZ
+        W1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZ
+        T0iSXRlbURlc2lnbmF0aW9uIi8+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T
+        2NjdXJzPSIxIiB0eXBlPSJ4czp1bnNpZ25lZEludCIgbmFtZT0iUHJvY2Vzc1RpbWUiLz4KI
+        CA8L3hzOnNlcXVlbmNlPgogPC94czpjb21wbGV4VHlwZT4KIDx4czplbGVtZW50IHR5cGU9I
+        nRuczpQcm9jZXNzQ2hhcmFjdGVyaXN0aWNzRGF0YVR5cGUiIG5hbWU9IlByb2Nlc3NDaGFyY
+        WN0ZXJpc3RpY3NEYXRhVHlwZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZlByb
+        2Nlc3NDaGFyYWN0ZXJpc3RpY3NEYXRhVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6Z
+        WxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0idW5ib3VuZGVkIiB0eXBlPSJ0bnM6U
+        HJvY2Vzc0NoYXJhY3RlcmlzdGljc0RhdGFUeXBlIiBuYW1lPSJQcm9jZXNzQ2hhcmFjdGVya
+        XN0aWNzRGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwve
+        HM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mUHJvY2Vzc0NoY
+        XJhY3RlcmlzdGljc0RhdGFUeXBlIiBuYW1lPSJMaXN0T2ZQcm9jZXNzQ2hhcmFjdGVyaXN0a
+        WNzRGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6Y29tcGxleFR5cGUgbmFtZT0iU
+        HJvY2Vzc0NvdW50ZXJEYXRhVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlbWVud
+        CBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6c3RyaW5nIiBuYW1lPSJJd
+        GVtRGVzaWduYXRpb24iLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1c
+        nM9IjEiIHR5cGU9InhzOnVuc2lnbmVkTG9uZyIgbmFtZT0iQ291bnRlciIvPgogICA8eHM6Z
+        WxlbWVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6dW5zaWduZWRMb
+        25nIiBuYW1lPSJDb3VudGVyQWNjZXB0ZWQiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzP
+        SIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnVuc2lnbmVkTG9uZyIgbmFtZT0iQ291bnRlc
+        lJlamVjdGVkIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6Z
+        WxlbWVudCB0eXBlPSJ0bnM6UHJvY2Vzc0NvdW50ZXJEYXRhVHlwZSIgbmFtZT0iUHJvY2Vzc
+        0NvdW50ZXJEYXRhVHlwZSIvPgogPHhzOmNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZlByb2Nlc
+        3NDb3VudGVyRGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT
+        2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOlByb2Nlc3NDb3Vud
+        GVyRGF0YVR5cGUiIG5hbWU9IlByb2Nlc3NDb3VudGVyRGF0YVR5cGUiIG5pbGxhYmxlPSJ0c
+        nVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVud
+        CB0eXBlPSJ0bnM6TGlzdE9mUHJvY2Vzc0NvdW50ZXJEYXRhVHlwZSIgbmFtZT0iTGlzdE9mU
+        HJvY2Vzc0NvdW50ZXJEYXRhVHlwZSIgbmlsbGFibGU9InRydWUiLz4KIDx4czpjb21wbGV4V
+        HlwZSBuYW1lPSJSb2JvdFN0YXR1c0RhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4c
+        zplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czpib29sZWFuI
+        iBuYW1lPSJTdGF0dXMiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1c
+        nM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iSXRlbURlc2lnbmF0aW9uIi8+CiAgPC94c
+        zpzZXF1ZW5jZT4KIDwveHM6Y29tcGxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6U
+        m9ib3RTdGF0dXNEYXRhVHlwZSIgbmFtZT0iUm9ib3RTdGF0dXNEYXRhVHlwZSIvPgogPHhzO
+        mNvbXBsZXhUeXBlIG5hbWU9Ikxpc3RPZlJvYm90U3RhdHVzRGF0YVR5cGUiPgogIDx4czpzZ
+        XF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91b
+        mRlZCIgdHlwZT0idG5zOlJvYm90U3RhdHVzRGF0YVR5cGUiIG5hbWU9IlJvYm90U3RhdHVzR
+        GF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tc
+        GxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6TGlzdE9mUm9ib3RTdGF0dXNEYXRhV
+        HlwZSIgbmFtZT0iTGlzdE9mUm9ib3RTdGF0dXNEYXRhVHlwZSIgbmlsbGFibGU9InRydWUiL
+        z4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJUYXJnZXRWYWx1ZURhdGFUeXBlIj4KICA8eHM6c
+        2VxdWVuY2U+CiAgIDx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0e
+        XBlPSJ0bnM6VGFyZ2V0VmFsdWVUeXBlIiBuYW1lPSJUYXJnZXRWYWx1ZVR5cGUiLz4KICAgP
+        HhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnVuc2lnb
+        mVkSW50IiBuYW1lPSJUYXJnZXRWYWx1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvb
+        XBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOlRhcmdldFZhbHVlRGF0YVR5cGUiI
+        G5hbWU9IlRhcmdldFZhbHVlRGF0YVR5cGUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMa
+        XN0T2ZUYXJnZXRWYWx1ZURhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4czplbGVtZ
+        W50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9InRuczpUYXJnZ
+        XRWYWx1ZURhdGFUeXBlIiBuYW1lPSJUYXJnZXRWYWx1ZURhdGFUeXBlIiBuaWxsYWJsZT0id
+        HJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lb
+        nQgdHlwZT0idG5zOkxpc3RPZlRhcmdldFZhbHVlRGF0YVR5cGUiIG5hbWU9Ikxpc3RPZlRhc
+        mdldFZhbHVlRGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6Y29tcGxleFR5cGUgb
+        mFtZT0iVHlwZUNvdW50ZXJEYXRhVHlwZSI+CiAgPHhzOnNlcXVlbmNlPgogICA8eHM6ZWxlb
+        WVudCBtaW5PY2N1cnM9IjAiIG1heE9jY3Vycz0iMSIgdHlwZT0ieHM6dW5zaWduZWRJbnQiI
+        G5hbWU9IkNvdW50ZXIiLz4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1c
+        nM9IjEiIHR5cGU9InhzOnN0cmluZyIgbmFtZT0iVHlwZSIvPgogIDwveHM6c2VxdWVuY2U+C
+        iA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOlR5cGVDb3VudGVyR
+        GF0YVR5cGUiIG5hbWU9IlR5cGVDb3VudGVyRGF0YVR5cGUiLz4KIDx4czpjb21wbGV4VHlwZ
+        SBuYW1lPSJMaXN0T2ZUeXBlQ291bnRlckRhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgI
+        Dx4czplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSJ1bmJvdW5kZWQiIHR5cGU9I
+        nRuczpUeXBlQ291bnRlckRhdGFUeXBlIiBuYW1lPSJUeXBlQ291bnRlckRhdGFUeXBlIiBua
+        WxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogP
+        HhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZlR5cGVDb3VudGVyRGF0YVR5cGUiIG5hbWU9I
+        kxpc3RPZlR5cGVDb3VudGVyRGF0YVR5cGUiIG5pbGxhYmxlPSJ0cnVlIi8+CiA8eHM6Y29tc
+        GxleFR5cGUgbmFtZT0iVmVyc2lvbkRhdGFUeXBlIj4KICA8eHM6c2VxdWVuY2U+CiAgIDx4c
+        zplbGVtZW50IG1pbk9jY3Vycz0iMCIgbWF4T2NjdXJzPSIxIiB0eXBlPSJ4czp1bnNpZ25lZ
+        FNob3J0IiBuYW1lPSJNYWpvciIvPgogICA8eHM6ZWxlbWVudCBtaW5PY2N1cnM9IjAiIG1he
+        E9jY3Vycz0iMSIgdHlwZT0ieHM6dW5zaWduZWRTaG9ydCIgbmFtZT0iTWlub3IiLz4KICAgP
+        HhzOmVsZW1lbnQgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9IjEiIHR5cGU9InhzOnVuc2lnb
+        mVkU2hvcnQiIG5hbWU9IlJldmlzaW9uIi8+CiAgPC94czpzZXF1ZW5jZT4KIDwveHM6Y29tc
+        GxleFR5cGU+CiA8eHM6ZWxlbWVudCB0eXBlPSJ0bnM6VmVyc2lvbkRhdGFUeXBlIiBuYW1lP
+        SJWZXJzaW9uRGF0YVR5cGUiLz4KIDx4czpjb21wbGV4VHlwZSBuYW1lPSJMaXN0T2ZWZXJza
+        W9uRGF0YVR5cGUiPgogIDx4czpzZXF1ZW5jZT4KICAgPHhzOmVsZW1lbnQgbWluT2NjdXJzP
+        SIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCIgdHlwZT0idG5zOlZlcnNpb25EYXRhVHlwZSIgb
+        mFtZT0iVmVyc2lvbkRhdGFUeXBlIiBuaWxsYWJsZT0idHJ1ZSIvPgogIDwveHM6c2VxdWVuY
+        2U+CiA8L3hzOmNvbXBsZXhUeXBlPgogPHhzOmVsZW1lbnQgdHlwZT0idG5zOkxpc3RPZlZlc
+        nNpb25EYXRhVHlwZSIgbmFtZT0iTGlzdE9mVmVyc2lvbkRhdGFUeXBlIiBuaWxsYWJsZT0id
+        HJ1ZSIvPgo8L3hzOnNjaGVtYT4K</uax:ByteString>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="NamespaceUri" DataType="String" NodeId="ns=1;i=6007 Node is not implemented in Server" ParentNodeId="ns=1;i=6006">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6006</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>http://audi.com/OpcUa/CentralIm/Types.xsd</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:ProductionStatusDataType" DataType="String" NodeId="ns=1;i=6009 Node is not implemented in Server" ParentNodeId="ns=1;i=6006">
+        <DisplayName>ProductionStatusDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5002</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6006</Reference>
+        </References>
+        <Value>
+            <uax:String>//xs:element[@name='ProductionStatusDataType']</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:SwitchingListDataType" DataType="String" NodeId="ns=1;i=6083 Node is not implemented in Server" ParentNodeId="ns=1;i=6006">
+        <DisplayName>SwitchingListDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=69</Reference>
+            <Reference IsForward="false" ReferenceType="HasDescription">ns=1;i=5028</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=6006</Reference>
+        </References>
+        <Value>
+            <uax:String>//xs:element[@name='SwitchingListDataType']</uax:String>
+        </Value>
+    </UAVariable>
+    <UAObject BrowseName="1:DiagnosticsType" NodeId="ns=1;i=1006 Node is not implemented in Server">
+        <DisplayName>DiagnosticsType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6031</Reference>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6034</Reference>
+        </References>
+    </UAObject>
+    <UAVariable AccessLevel="3" BrowseName="1:DeviceHealth" DataType="DeviceHealthEnumeration" NodeId="ns=1;i=6031 Node is not implemented in Server" ParentNodeId="ns=1;i=1006">
+        <DisplayName>DeviceHealth</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1006</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:Error" DataType="ErrorDataType" NodeId="ns=1;i=6034 Node is not implemented in Server" ParentNodeId="ns=1;i=1006">
+        <DisplayName>Error</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1006</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="1:EnergyDataType" NodeId="ns=1;i=1007 Node is not implemented in Server">
+        <DisplayName>EnergyDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6054</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6056</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6044</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6052</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6050</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6046</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6042</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6043</Reference>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6048</Reference>
+        </References>
+    </UAObject>
+    <UAVariable AccessLevel="3" BrowseName="1:ActiveEnergyKWh" DataType="Double" NodeId="ns=1;i=6054 Node is not implemented in Server" ParentNodeId="ns=1;i=1007">
+        <DisplayName>ActiveEnergyKWh</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1007</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6055</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="EURange" DataType="Range" NodeId="ns=1;i=6055 Node is not implemented in Server" ParentNodeId="ns=1;i=6054">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6054</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:ActivePowerKW" DataType="Double" NodeId="ns=1;i=6056 Node is not implemented in Server" ParentNodeId="ns=1;i=1007">
+        <DisplayName>ActivePowerKW</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1007</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6057</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="EURange" DataType="Range" NodeId="ns=1;i=6057 Node is not implemented in Server" ParentNodeId="ns=1;i=6056">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6056</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:ColdWaterDm3" DataType="Double" NodeId="ns=1;i=6044 Node is not implemented in Server" ParentNodeId="ns=1;i=1007">
+        <DisplayName>ColdWaterDm3</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1007</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6045</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="EURange" DataType="Range" NodeId="ns=1;i=6045 Node is not implemented in Server" ParentNodeId="ns=1;i=6044">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6044</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:CompressedAirDm3" DataType="Double" NodeId="ns=1;i=6052 Node is not implemented in Server" ParentNodeId="ns=1;i=1007">
+        <DisplayName>CompressedAirDm3</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1007</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6053</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="EURange" DataType="Range" NodeId="ns=1;i=6053 Node is not implemented in Server" ParentNodeId="ns=1;i=6052">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6052</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:CoolingLubricantDm3" DataType="Double" NodeId="ns=1;i=6050 Node is not implemented in Server" ParentNodeId="ns=1;i=1007">
+        <DisplayName>CoolingLubricantDm3</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1007</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6051</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="EURange" DataType="Range" NodeId="ns=1;i=6051 Node is not implemented in Server" ParentNodeId="ns=1;i=6050">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6050</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:CoolingWaterDm3" DataType="Double" NodeId="ns=1;i=6046 Node is not implemented in Server" ParentNodeId="ns=1;i=1007">
+        <DisplayName>CoolingWaterDm3</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1007</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6047</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="EURange" DataType="Range" NodeId="ns=1;i=6047 Node is not implemented in Server" ParentNodeId="ns=1;i=6046">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6046</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:EnergyCounterKV" DataType="UInt32" NodeId="ns=1;i=6042 Node is not implemented in Server" ParentNodeId="ns=1;i=1007">
+        <DisplayName>EnergyCounterKV</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1007</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:EnergyCounterSV" DataType="UInt32" NodeId="ns=1;i=6043 Node is not implemented in Server" ParentNodeId="ns=1;i=1007">
+        <DisplayName>EnergyCounterSV</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1007</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:OilDm3" DataType="Double" NodeId="ns=1;i=6048 Node is not implemented in Server" ParentNodeId="ns=1;i=1007">
+        <DisplayName>OilDm3</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6049</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1007</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="EURange" DataType="Range" NodeId="ns=1;i=6049 Node is not implemented in Server" ParentNodeId="ns=1;i=6048">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6048</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="1:ProductionDataType" NodeId="ns=1;i=1003 Node is not implemented in Server">
+        <DisplayName>ProductionDataType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6017</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6012</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6013</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6037</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6036</Reference>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6010</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6038</Reference>
+        </References>
+    </UAObject>
+    <UAVariable AccessLevel="3" ArrayDimensions="0" BrowseName="1:CounterPerType" DataType="TypeCounterDataType" NodeId="ns=1;i=6017 Node is not implemented in Server" ParentNodeId="ns=1;i=1003" ValueRank="1">
+        <DisplayName>CounterPerType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:CounterTotal" DataType="UInt32" NodeId="ns=1;i=6012 Node is not implemented in Server" ParentNodeId="ns=1;i=1003">
+        <DisplayName>CounterTotal</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:CounterTotalRejected" DataType="UInt32" NodeId="ns=1;i=6013 Node is not implemented in Server" ParentNodeId="ns=1;i=1003">
+        <DisplayName>CounterTotalRejected</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=80</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:CurrentCycleTime" DataType="UInt32" NodeId="ns=1;i=6037 Node is not implemented in Server" ParentNodeId="ns=1;i=1003">
+        <DisplayName>CurrentCycleTime</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:CurrentType" DataType="String" NodeId="ns=1;i=6036 Node is not implemented in Server" ParentNodeId="ns=1;i=1003">
+        <DisplayName>CurrentType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:ProductionStatus" DataType="ProductionStatusDataType" NodeId="ns=1;i=6010 Node is not implemented in Server" ParentNodeId="ns=1;i=1003">
+        <DisplayName>ProductionStatus</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1003</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:ReferenceCycleTime" DataType="UInt32" NodeId="ns=1;i=6038 Node is not implemented in Server" ParentNodeId="ns=1;i=1003">
+        <DisplayName>ReferenceCycleTime</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1003</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="1:ProtectionCircuitType" NodeId="ns=1;i=1005 Node is not implemented in Server">
+        <DisplayName>ProtectionCircuitType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6025</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6079</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6078</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6019</Reference>
+            <Reference IsForward="false" ReferenceType="HasSubtype">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6022</Reference>
+        </References>
+    </UAObject>
+    <UAVariable AccessLevel="3" BrowseName="1:ItemDesignation" DataType="String" NodeId="ns=1;i=6025 Node is not implemented in Server" ParentNodeId="ns=1;i=1005">
+        <DisplayName>ItemDesignation</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1005</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" ArrayDimensions="0" BrowseName="1:ProcessCharacteristics" DataType="ProcessCharacteristicsDataType" NodeId="ns=1;i=6079 Node is not implemented in Server" ParentNodeId="ns=1;i=1005" ValueRank="1">
+        <DisplayName>ProcessCharacteristics</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1005</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" ArrayDimensions="0" BrowseName="1:ProcessCounter" DataType="ProcessCounterDataType" NodeId="ns=1;i=6078 Node is not implemented in Server" ParentNodeId="ns=1;i=1005" ValueRank="1">
+        <DisplayName>ProcessCounter</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1005</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:ProductionStatus" DataType="ProductionStatusDataType" NodeId="ns=1;i=6019 Node is not implemented in Server" ParentNodeId="ns=1;i=1005">
+        <DisplayName>ProductionStatus</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1005</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" ArrayDimensions="0" BrowseName="1:RobotStatus" DataType="RobotStatusDataType" NodeId="ns=1;i=6022 Node is not implemented in Server" ParentNodeId="ns=1;i=1005" ValueRank="1">
+        <DisplayName>RobotStatus</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1005</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="1:ProductionEquipmentType" NodeId="ns=1;i=1002 Node is not implemented in Server">
+        <DisplayName>ProductionEquipmentType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=5016</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5020</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6029</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6003</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5004</Reference>
+            <Reference IsForward="false" ReferenceType="HasSubtype">ns=2;i=1002</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6001</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6002</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="1:Diagnostics" NodeId="ns=1;i=5016 Node is not implemented in Server" ParentNodeId="ns=1;i=1002">
+        <DisplayName>Diagnostics</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6030</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1006</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6035</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAObject>
+    <UAVariable AccessLevel="3" BrowseName="1:DeviceHealth" DataType="DeviceHealthEnumeration" NodeId="ns=1;i=6030 Node is not implemented in Server" ParentNodeId="ns=1;i=5016">
+        <DisplayName>DeviceHealth</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=5016</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:Error" DataType="ErrorDataType" NodeId="ns=1;i=6035 Node is not implemented in Server" ParentNodeId="ns=1;i=5016">
+        <DisplayName>Error</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=5016</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="1:EnergyData" NodeId="ns=1;i=5020 Node is not implemented in Server" ParentNodeId="ns=1;i=1002">
+        <DisplayName>EnergyData</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6058</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6060</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6062</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6064</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6066</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6068</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6070</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6071</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1007</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6072</Reference>
+        </References>
+    </UAObject>
+    <UAVariable AccessLevel="3" BrowseName="1:ActiveEnergyKWh" DataType="Double" NodeId="ns=1;i=6058 Node is not implemented in Server" ParentNodeId="ns=1;i=5020">
+        <DisplayName>ActiveEnergyKWh</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5020</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6059</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="EURange" DataType="Range" NodeId="ns=1;i=6059 Node is not implemented in Server" ParentNodeId="ns=1;i=6058">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6058</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:ActivePowerKW" DataType="Double" NodeId="ns=1;i=6060 Node is not implemented in Server" ParentNodeId="ns=1;i=5020">
+        <DisplayName>ActivePowerKW</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5020</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6061</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="EURange" DataType="Range" NodeId="ns=1;i=6061 Node is not implemented in Server" ParentNodeId="ns=1;i=6060">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6060</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:ColdWaterDm3" DataType="Double" NodeId="ns=1;i=6062 Node is not implemented in Server" ParentNodeId="ns=1;i=5020">
+        <DisplayName>ColdWaterDm3</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5020</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6063</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="EURange" DataType="Range" NodeId="ns=1;i=6063 Node is not implemented in Server" ParentNodeId="ns=1;i=6062">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6062</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:CompressedAirDm3" DataType="Double" NodeId="ns=1;i=6064 Node is not implemented in Server" ParentNodeId="ns=1;i=5020">
+        <DisplayName>CompressedAirDm3</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5020</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6065</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="EURange" DataType="Range" NodeId="ns=1;i=6065 Node is not implemented in Server" ParentNodeId="ns=1;i=6064">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6064</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:CoolingLubricantDm3" DataType="Double" NodeId="ns=1;i=6066 Node is not implemented in Server" ParentNodeId="ns=1;i=5020">
+        <DisplayName>CoolingLubricantDm3</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5020</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6067</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="EURange" DataType="Range" NodeId="ns=1;i=6067 Node is not implemented in Server" ParentNodeId="ns=1;i=6066">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6066</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:CoolingWaterDm3" DataType="Double" NodeId="ns=1;i=6068 Node is not implemented in Server" ParentNodeId="ns=1;i=5020">
+        <DisplayName>CoolingWaterDm3</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5020</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6069</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="EURange" DataType="Range" NodeId="ns=1;i=6069 Node is not implemented in Server" ParentNodeId="ns=1;i=6068">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6068</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:EnergyCounterKV" DataType="UInt32" NodeId="ns=1;i=6070 Node is not implemented in Server" ParentNodeId="ns=1;i=5020">
+        <DisplayName>EnergyCounterKV</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5020</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:EnergyCounterSV" DataType="UInt32" NodeId="ns=1;i=6071 Node is not implemented in Server" ParentNodeId="ns=1;i=5020">
+        <DisplayName>EnergyCounterSV</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5020</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:OilDm3" DataType="Double" NodeId="ns=1;i=6072 Node is not implemented in Server" ParentNodeId="ns=1;i=5020">
+        <DisplayName>OilDm3</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=2368</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;i=6073</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5020</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="EURange" DataType="Range" NodeId="ns=1;i=6073 Node is not implemented in Server" ParentNodeId="ns=1;i=6072">
+        <DisplayName>EURange</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=6072</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:IMVersion" DataType="VersionDataType" NodeId="ns=1;i=6029 Node is not implemented in Server" ParentNodeId="ns=1;i=1002">
+        <DisplayName>IMVersion</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:ItemDesignation" DataType="String" NodeId="ns=1;i=6003 Node is not implemented in Server" ParentNodeId="ns=1;i=1002">
+        <DisplayName>ItemDesignation</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="1:ProductionData" NodeId="ns=1;i=5004 Node is not implemented in Server" ParentNodeId="ns=1;i=1002">
+        <DisplayName>ProductionData</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=6018</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6014</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6040</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6039</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1003</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6011</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6041</Reference>
+        </References>
+    </UAObject>
+    <UAVariable AccessLevel="3" ArrayDimensions="0" BrowseName="1:CounterPerType" DataType="TypeCounterDataType" NodeId="ns=1;i=6018 Node is not implemented in Server" ParentNodeId="ns=1;i=5004" ValueRank="1">
+        <DisplayName>CounterPerType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5004</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:CounterTotal" DataType="UInt32" NodeId="ns=1;i=6014 Node is not implemented in Server" ParentNodeId="ns=1;i=5004">
+        <DisplayName>CounterTotal</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5004</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:CurrentCycleTime" DataType="UInt32" NodeId="ns=1;i=6040 Node is not implemented in Server" ParentNodeId="ns=1;i=5004">
+        <DisplayName>CurrentCycleTime</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5004</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:CurrentType" DataType="String" NodeId="ns=1;i=6039 Node is not implemented in Server" ParentNodeId="ns=1;i=5004">
+        <DisplayName>CurrentType</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5004</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:ProductionStatus" DataType="ProductionStatusDataType" NodeId="ns=1;i=6011 Node is not implemented in Server" ParentNodeId="ns=1;i=5004">
+        <DisplayName>ProductionStatus</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5004</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:ReferenceCycleTime" DataType="UInt32" NodeId="ns=1;i=6041 Node is not implemented in Server" ParentNodeId="ns=1;i=5004">
+        <DisplayName>ReferenceCycleTime</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5004</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:SerialNumberController" DataType="String" NodeId="ns=1;i=6001 Node is not implemented in Server" ParentNodeId="ns=1;i=1002">
+        <DisplayName>SerialNumberController</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:SerialNumberHW" DataType="String" NodeId="ns=1;i=6002 Node is not implemented in Server" ParentNodeId="ns=1;i=1002">
+        <DisplayName>SerialNumberHW</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=1002</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="1:BodyShopProductionEquipmentType" NodeId="ns=1;i=1004 Node is not implemented in Server">
+        <DisplayName>BodyShopProductionEquipmentType</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasSubtype">ns=1;i=1002</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=5008</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7001</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=7002</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6084</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6087</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="1:ProtectionCircuits" NodeId="ns=1;i=5008 Node is not implemented in Server" ParentNodeId="ns=1;i=1004">
+        <DisplayName>ProtectionCircuits</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent">ns=1;i=5012</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1004</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="1:&lt;ProtectionCircuitItemDesignation&gt;" NodeId="ns=1;i=5012 Node is not implemented in Server" ParentNodeId="ns=1;i=5008" SymbolicName="ProtectionCircuitItemDesignation">
+        <DisplayName>&lt;ProtectionCircuitItemDesignation&gt;</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5008</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6023</Reference>
+            <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6081</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6080</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6024</Reference>
+            <Reference ReferenceType="HasTypeDefinition">ns=1;i=1005</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=6026</Reference>
+        </References>
+    </UAObject>
+    <UAVariable AccessLevel="3" BrowseName="1:ItemDesignation" DataType="String" NodeId="ns=1;i=6023 Node is not implemented in Server" ParentNodeId="ns=1;i=5012">
+        <DisplayName>ItemDesignation</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5012</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" ArrayDimensions="0" BrowseName="1:ProcessCharacteristics" DataType="ProcessCharacteristicsDataType" NodeId="ns=1;i=6081 Node is not implemented in Server" ParentNodeId="ns=1;i=5012" ValueRank="1">
+        <DisplayName>ProcessCharacteristics</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5012</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" ArrayDimensions="0" BrowseName="1:ProcessCounter" DataType="ProcessCounterDataType" NodeId="ns=1;i=6080 Node is not implemented in Server" ParentNodeId="ns=1;i=5012" ValueRank="1">
+        <DisplayName>ProcessCounter</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5012</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:ProductionStatus" DataType="ProductionStatusDataType" NodeId="ns=1;i=6024 Node is not implemented in Server" ParentNodeId="ns=1;i=5012">
+        <DisplayName>ProductionStatus</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5012</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" ArrayDimensions="0" BrowseName="1:RobotStatus" DataType="RobotStatusDataType" NodeId="ns=1;i=6026 Node is not implemented in Server" ParentNodeId="ns=1;i=5012" ValueRank="1">
+        <DisplayName>RobotStatus</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=5012</Reference>
+        </References>
+    </UAVariable>
+    <UAMethod BrowseName="1:SetSwitchingList" NodeId="ns=1;i=7001 Node is not implemented in Server" ParentNodeId="ns=1;i=1004">
+        <DisplayName>SetSwitchingList</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6089</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1004</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable ArrayDimensions="1" BrowseName="InputArguments" DataType="Argument" NodeId="ns=1;i=6089 Node is not implemented in Server" ParentNodeId="ns=1;i=7001" ValueRank="1">
+        <DisplayName>InputArguments</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=7001</Reference>
+        </References>
+    </UAVariable>
+    <UAMethod BrowseName="1:SetTargetValues" NodeId="ns=1;i=7002 Node is not implemented in Server" ParentNodeId="ns=1;i=1004">
+        <DisplayName>SetTargetValues</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty">ns=1;i=6091</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1004</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable ArrayDimensions="1" BrowseName="InputArguments" DataType="Argument" NodeId="ns=1;i=6091 Node is not implemented in Server" ParentNodeId="ns=1;i=7002" ValueRank="1">
+        <DisplayName>InputArguments</DisplayName>
+        <References>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;i=7002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" BrowseName="1:SwitchingList" DataType="SwitchingListDataType" NodeId="ns=1;i=6084 Node is not implemented in Server" ParentNodeId="ns=1;i=1004">
+        <DisplayName>SwitchingList</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1004</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" ArrayDimensions="0" BrowseName="1:TargetValues" DataType="TargetValueDataType" NodeId="ns=1;i=6087 Node is not implemented in Server" ParentNodeId="ns=1;i=1004" ValueRank="1">
+        <DisplayName>TargetValues</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference ReferenceType="HasModellingRule">i=78</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=1004</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="Default Binary" NodeId="ns=1;i=5001 Node is not implemented in Server" SymbolicName="DefaultBinary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3002</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6008</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default XML" NodeId="ns=1;i=5002 Node is not implemented in Server" SymbolicName="DefaultXml">
+        <DisplayName>Default XML</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3002</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6009</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default JSON" NodeId="ns=1;i=5003 Node is not implemented in Server" SymbolicName="DefaultJson">
+        <DisplayName>Default JSON</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3002</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default Binary" NodeId="ns=1;i=5005 Node is not implemented in Server" SymbolicName="DefaultBinary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3003</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6015</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default XML" NodeId="ns=1;i=5006 Node is not implemented in Server" SymbolicName="DefaultXml">
+        <DisplayName>Default XML</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3003</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6016</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default JSON" NodeId="ns=1;i=5007 Node is not implemented in Server" SymbolicName="DefaultJson">
+        <DisplayName>Default JSON</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3003</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default Binary" NodeId="ns=1;i=5009 Node is not implemented in Server" SymbolicName="DefaultBinary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3004</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6020</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default XML" NodeId="ns=1;i=5010 Node is not implemented in Server" SymbolicName="DefaultXml">
+        <DisplayName>Default XML</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3004</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6021</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default JSON" NodeId="ns=1;i=5011 Node is not implemented in Server" SymbolicName="DefaultJson">
+        <DisplayName>Default JSON</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3004</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default Binary" NodeId="ns=1;i=5013 Node is not implemented in Server" SymbolicName="DefaultBinary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3005</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6027</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default XML" NodeId="ns=1;i=5014 Node is not implemented in Server" SymbolicName="DefaultXml">
+        <DisplayName>Default XML</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3005</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6028</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default JSON" NodeId="ns=1;i=5015 Node is not implemented in Server" SymbolicName="DefaultJson">
+        <DisplayName>Default JSON</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3005</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default Binary" NodeId="ns=1;i=5017 Node is not implemented in Server" SymbolicName="DefaultBinary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3006</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6032</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default XML" NodeId="ns=1;i=5018 Node is not implemented in Server" SymbolicName="DefaultXml">
+        <DisplayName>Default XML</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3006</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6033</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default JSON" NodeId="ns=1;i=5019 Node is not implemented in Server" SymbolicName="DefaultJson">
+        <DisplayName>Default JSON</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3006</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default Binary" NodeId="ns=1;i=5021 Node is not implemented in Server" SymbolicName="DefaultBinary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3007</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6074</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default XML" NodeId="ns=1;i=5022 Node is not implemented in Server" SymbolicName="DefaultXml">
+        <DisplayName>Default XML</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3007</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6075</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default JSON" NodeId="ns=1;i=5023 Node is not implemented in Server" SymbolicName="DefaultJson">
+        <DisplayName>Default JSON</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3007</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default Binary" NodeId="ns=1;i=5024 Node is not implemented in Server" SymbolicName="DefaultBinary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3008</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6076</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default XML" NodeId="ns=1;i=5025 Node is not implemented in Server" SymbolicName="DefaultXml">
+        <DisplayName>Default XML</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3008</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6077</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default JSON" NodeId="ns=1;i=5026 Node is not implemented in Server" SymbolicName="DefaultJson">
+        <DisplayName>Default JSON</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3008</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default Binary" NodeId="ns=1;i=5027 Node is not implemented in Server" SymbolicName="DefaultBinary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3009</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6082</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default XML" NodeId="ns=1;i=5028 Node is not implemented in Server" SymbolicName="DefaultXml">
+        <DisplayName>Default XML</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3009</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6083</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default JSON" NodeId="ns=1;i=5029 Node is not implemented in Server" SymbolicName="DefaultJson">
+        <DisplayName>Default JSON</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3009</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default Binary" NodeId="ns=1;i=5030 Node is not implemented in Server" SymbolicName="DefaultBinary">
+        <DisplayName>Default Binary</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3011</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6085</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default XML" NodeId="ns=1;i=5031 Node is not implemented in Server" SymbolicName="DefaultXml">
+        <DisplayName>Default XML</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3011</Reference>
+            <Reference ReferenceType="HasDescription">ns=1;i=6086</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="Default JSON" NodeId="ns=1;i=5032 Node is not implemented in Server" SymbolicName="DefaultJson">
+        <DisplayName>Default JSON</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=76</Reference>
+            <Reference IsForward="false" ReferenceType="HasEncoding">ns=1;i=3011</Reference>
+        </References>
+    </UAObject>
+</UANodeSet>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<UANodeSet xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+    <UAObject BrowseName="1:Koffer" NodeId="ns=1;i=2001 Node is not implemented in Server" ParentNodeId="i=85">
+        <DisplayName>Koffer</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="Organizes">i=85</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+            <Reference ReferenceType="Organizes">ns=1;i=2002</Reference>
+            <Reference ReferenceType="Organizes">ns=1;i=2007</Reference>
+            <Reference ReferenceType="Organizes">ns=1;i=2011</Reference>
+            <Reference ReferenceType="Organizes">ns=1;i=2015</Reference>
+            <Reference ReferenceType="Organizes">ns=1;i=2017</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="1:Temp_Sensors" NodeId="ns=1;i=2002 Node is not implemented in Server" ParentNodeId="ns=1;i=2001">
+        <DisplayName>Temp_Sensors</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="Organizes">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=2003</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=2004</Reference>
+        </References>
+    </UAObject>
+    <UAVariable BrowseName="1:Temp_C" DataType="Float" NodeId="ns=1;i=2003 Node is not implemented in Server" ParentNodeId="ns=1;i=2002">
+        <DisplayName>Temp_C</DisplayName>
+        <Description>Temp_C</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=2002</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Float>0.0</uax:Float>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:Temp_K" DataType="Float" NodeId="ns=1;i=2004 Node is not implemented in Server" ParentNodeId="ns=1;i=2002">
+        <DisplayName>Temp_K</DisplayName>
+        <Description>Temp_K</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=2002</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Float>273.15</uax:Float>
+        </Value>
+    </UAVariable>
+    <UAObject BrowseName="1:Accel" NodeId="ns=1;i=2007 Node is not implemented in Server" ParentNodeId="ns=1;i=2001">
+        <DisplayName>Accel</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="Organizes">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=2008</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=2009</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=2010</Reference>
+        </References>
+    </UAObject>
+    <UAVariable BrowseName="1:Accel_x" DataType="Float" NodeId="ns=1;i=2008 Node is not implemented in Server" ParentNodeId="ns=1;i=2007">
+        <DisplayName>Accel_x</DisplayName>
+        <Description>Accel_x</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=2007</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Float>0.0</uax:Float>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:Accel_y" DataType="Float" NodeId="ns=1;i=2009 Node is not implemented in Server" ParentNodeId="ns=1;i=2007">
+        <DisplayName>Accel_y</DisplayName>
+        <Description>Accel_y</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=2007</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Float>0.0</uax:Float>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:Accel_z" DataType="Float" NodeId="ns=1;i=2010 Node is not implemented in Server" ParentNodeId="ns=1;i=2007">
+        <DisplayName>Accel_z</DisplayName>
+        <Description>Accel_z</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=2007</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Float>0.0</uax:Float>
+        </Value>
+    </UAVariable>
+    <UAObject BrowseName="1:Gyro" NodeId="ns=1;i=2011 Node is not implemented in Server" ParentNodeId="ns=1;i=2001">
+        <DisplayName>Gyro</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="Organizes">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=2012</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=2013</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=2014</Reference>
+        </References>
+    </UAObject>
+    <UAVariable BrowseName="1:Gyro_x" DataType="Float" NodeId="ns=1;i=2012 Node is not implemented in Server" ParentNodeId="ns=1;i=2011">
+        <DisplayName>Gyro_x</DisplayName>
+        <Description>Gyro_x</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=2011</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Float>0.0</uax:Float>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:Gyro_y" DataType="Float" NodeId="ns=1;i=2013 Node is not implemented in Server" ParentNodeId="ns=1;i=2011">
+        <DisplayName>Gyro_y</DisplayName>
+        <Description>Gyro_y</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=2011</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Float>0.0</uax:Float>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:Gyro_z" DataType="Float" NodeId="ns=1;i=2014 Node is not implemented in Server" ParentNodeId="ns=1;i=2011">
+        <DisplayName>Gyro_z</DisplayName>
+        <Description>Gyro_z</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=2011</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Float>0.0</uax:Float>
+        </Value>
+    </UAVariable>
+    <UAObject BrowseName="1:Magneto" NodeId="ns=1;i=2015 Node is not implemented in Server" ParentNodeId="ns=1;i=2001">
+        <DisplayName>Magneto</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="Organizes">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=2016</Reference>
+        </References>
+    </UAObject>
+    <UAVariable BrowseName="1:Orientation" DataType="Float" NodeId="ns=1;i=2016 Node is not implemented in Server" ParentNodeId="ns=1;i=2015">
+        <DisplayName>Orientation</DisplayName>
+        <Description>Orientation</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=2015</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Float>0.0</uax:Float>
+        </Value>
+    </UAVariable>
+    <UAObject BrowseName="1:GPS" NodeId="ns=1;i=2017 Node is not implemented in Server" ParentNodeId="ns=1;i=2001">
+        <DisplayName>GPS</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="Organizes">ns=1;i=2001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=2019</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;i=2020</Reference>
+        </References>
+    </UAObject>
+    <UAVariable BrowseName="1:Long" DataType="Float" NodeId="ns=1;i=2019 Node is not implemented in Server" ParentNodeId="ns=1;i=2017">
+        <DisplayName>Long</DisplayName>
+        <Description>Long</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=2017</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Float>0.0</uax:Float>
+        </Value>
+    </UAVariable>
+    <UAVariable BrowseName="1:Lat" DataType="Float" NodeId="ns=1;i=2020 Node is not implemented in Server" ParentNodeId="ns=1;i=2017">
+        <DisplayName>Lat</DisplayName>
+        <Description>Lat</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;i=2017</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+        <Value>
+            <uax:Float>0.0</uax:Float>
+        </Value>
+    </UAVariable>
+</UANodeSet>

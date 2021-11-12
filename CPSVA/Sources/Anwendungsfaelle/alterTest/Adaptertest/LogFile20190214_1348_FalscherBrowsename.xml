@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<UANodeSet xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+    <UAObject BrowseName="2:GESI" NodeId="ns=2;s=5005" ParentNodeId="ns=0;i=85 not in the specification" SymbolicName=" not in the specification">
+        <DisplayName>GESI</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=85</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=5005.AdminTools</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=5005.addCompany</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=5005.remCompany</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=5005.searchForPackage</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=10002</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20056</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19162</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=15325</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=13788</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=12364</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=10458</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=10021</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=10019</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=21937</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=26399</Reference>
+        </References>
+    </UAObject>
+    <UAVariable AccessLevel=" not in the specification" ArrayDimensions=" not in the specification" BrowseName="2:GESI" DataType=" not in the specification" NodeId="ns=2;i=6176 different to specification" ParentNodeId="ns=0;i=93 not in the specification" ValueRank=" not in the specification">
+        <DisplayName>GESI</DisplayName>
+        <Description> different to specification</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=93</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;i=6186</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;i=6177</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="2:IPK different to specification" NodeId="ns=2;s=10019" ParentNodeId="ns=2;s=5005 not in the specification" SymbolicName=" not in the specification">
+        <DisplayName>IPK</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=5005</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=10019.addCPS</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=10019.remCPS</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=10019.searchForPackage</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19182</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20481</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=20283</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19930</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19561</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19560</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19559</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19556</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19555</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19540</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19536</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19186</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19185</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22064</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22100</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22102</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=25005</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=25003</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22686</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22443</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22430</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22427</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22424</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22379</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22377</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22362</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22351</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22330</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22305</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22152</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19179</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19060</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=17284</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=17254</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22360</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=17285</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=15118</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=10559</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=15153</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=18759</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=19020</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=15238</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=10034</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=17249</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=25702</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="2:CameraOut.default" NodeId="ns=2;s=22427" ParentNodeId="ns=2;s=10019 not in the specification" SymbolicName=" not in the specification">
+        <DisplayName>CameraOut.default</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=10019</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22427.addPackage</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22427.remPackage</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="2:CameraMWD.CameraMWD" NodeId="ns=2;s=22424" ParentNodeId="ns=2;s=10019 not in the specification" SymbolicName=" not in the specification">
+        <DisplayName>CameraMWD.CameraMWD</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=10019</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22424.addPackage</Reference>
+            <Reference ReferenceType="HasComponent">ns=2;s=22424.remPackage</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="0:Server" NodeId="ns=0;i=2253" ParentNodeId="ns=0;i=85 not in the specification" SymbolicName=" not in the specification">
+        <DisplayName>Server</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=85</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2254</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2255</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2256</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2267</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2994</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2268</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2274</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2295</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2296</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11492</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=12873</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;s=1c35cb2b-e5d0-495a-93c9-da095c652230</Reference>
+        </References>
+    </UAObject>
+    <UAVariable AccessLevel="1" ArrayDimensions=" not in the specification" BrowseName="0:ServiceLevel" DataType="Byte" NodeId="ns=0;i=2267" ParentNodeId="ns=0;i=2253 not in the specification" ValueRank=" different to specification">
+        <DisplayName>ServiceLevel different to specification</DisplayName>
+        <Description> different to specification</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2253</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" ArrayDimensions=" not in the specification" BrowseName="2:area" DataType="Double" NodeId="ns=2;s=15908.area different to specification" ParentNodeId="ns=2;s=15908 not in the specification" ValueRank=" different to specification">
+        <DisplayName>area</DisplayName>
+        <Description> different to specification</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=15908</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" ArrayDimensions=" not in the specification" BrowseName="2:area" DataType="Double" NodeId="ns=2;s=14091.area different to specification" ParentNodeId="ns=2;s=14091 not in the specification" ValueRank=" different to specification">
+        <DisplayName>area</DisplayName>
+        <Description> different to specification</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=14091</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" ArrayDimensions=" not in the specification" BrowseName="2:area" DataType="Double" NodeId="ns=2;s=18959.area different to specification" ParentNodeId="ns=2;s=18959 not in the specification" ValueRank=" different to specification">
+        <DisplayName>area</DisplayName>
+        <Description> different to specification</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=18959</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable AccessLevel="3" ArrayDimensions=" not in the specification" BrowseName="2:area" DataType="Double" NodeId="ns=2;s=20783.area" ParentNodeId="ns=2;s=20783 not in the specification" ValueRank=" different to specification">
+        <DisplayName>area</DisplayName>
+        <Description> different to specification</Description>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=2;s=20783</Reference>
+        </References>
+    </UAVariable>
+</UANodeSet>
