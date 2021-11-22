@@ -1,0 +1,37 @@
+Anwendungsfall Datenstruktur_Machine.xml
+
+1.
+ - in der Configuration: Zeile 31 BrowseName=""
+ - in der LogFile: Zeile 14 BrowseName="3:Maschinenzustaende" + Fehlermeldung
+
+2.
+ - in der Configuration: Zeile 54 NodeId=""
+ - in der LogFile: Zeile 35 NodeId="ns=3;i=2003" + Fehlermeldung
+
+3.
+ - in der Configuration: Zeile 65 ParentNodeId=""
+ - in der LogFile: Zeile 42 ParentNodeId="ns=3;i=2002" + Fehlermeldung
+
+4.
+ - in der Configuration: Zeile 76 NodeId="ns=3;i=20"
+ - in der LogFile: 
+
+5.
+ - in der Configuration: Zeile 87 BrowseName="3:S04_Technische_"
+ - in der LogFile: Zeile 56 BrowseName="3:S04_Technische_Stoerung different to specification"
+
+6.
+ - in der Configuration: Zeile 91 <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=20</Reference>
+ - in der LogFile: Zeile 60 <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2002</Reference>
+
+7.
+ - in der Configuration: Zeile 99 <DisplayName>S05_Techn_S</DisplayName>
+ - in der LogFile: Zeile 64 <DisplayName>S05_Techn_Stoer_w_behoben different to specification</DisplayName>
+
+8.
+ - in der Configuration: Zeile 109 DataType="Boole"
+ - in der LogFile: Zeile 70 DataType="Boole"
+
+9.
+ - in der Configuration: Zeile 122 <Description>S07_Organ</Description>
+ - in der LogFile: Zeile 79 <Description>S07_Organ_stoer_w_behoben different to specification</Description>

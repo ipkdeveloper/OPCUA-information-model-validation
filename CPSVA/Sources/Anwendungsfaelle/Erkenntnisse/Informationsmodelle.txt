@@ -1,0 +1,13 @@
+Hier werden die Erkenntnisse des Verleichs der Informationsmodelle (Robotics_edit.xml und IOLink_edited.xml) aufgelistet
+
+ - Die Frameworks (Milo und OPC Foundation) das ergebnis des Browsen liefert nicht alle Referenzen eines Knotens
+   Das Milo Framework liefert als return value ine liste von opc ua knoten
+   Das OPCF Framework liefert eine Liste der Referenzen zurück
+
+   Milo getReferences example:
+   https://github.com/eclipse/milo/blob/master/milo-examples/client-examples/src/main/java/org/eclipse/milo/examples/client/BrowseExample.java
+
+ - Das Milo Framework liefert descriptions OPCF nicht
+   Die Implementierung beider Frameworks ist unterschiedlich und daher gibt es bei der OPCF schlicht weg diese methode getDescription() nicht
+
+ - IOLink_edited.xml gab es keine Probleme

@@ -1,0 +1,48 @@
+Anwendungsfaelle:
+
+1. Audi_BDE_Informationsmodell.xml
+ - Der Emulationserver kann dieses Informationsmodell nicht einlesen
+   - Server startet zwar, aber dort sind nicht die Knoten aus der xml vorhanden
+   - da Informationsmodell von Audi zusammen mit der FH Ingolstadt entwickelt wurde,
+     vielleicht Fehler seitens Softing, die die Routine geschrieben haben, um das Informationsmodell einzulesen
+ - Dieses kann vom Adapter eingelesen werden
+   - die entsprechende LogFile wird generiert
+
+2. Datenstruktur_Machine.xml
+ - Dieses Informationsmodell wurde aus der Excel Tabelle entnommen, die Excel Tabelle war der erste Entwurf seitens Audi für ein Informationsmodell
+ - Dieses kann vom Server eingelesen werden
+   - keine Fehler beim Ändern der Werte
+ - Diese kann vom Adapter eingelesen werden
+   - die entsprechende LogFile wird generiert
+
+3. gesi.xml
+ - Dieses Informationsmodell stellt eine Teilmenge der Knoten aus dem realen GESI Server da
+ - Dieses kann vom Server eingelesen werden
+   - Fehler beim Ändern der Werte
+   - gesi.xml definiert andere NodeIds usw. als letztendlich im Server implementiert
+     - LogFile_gesi_gegen_FalscheServerGesi.xml ist der Test Gesi im Adapter und Gesi im Server
+ - Dieses kann vom Adapter eingelesen werden
+   - die entsprechende LogFile wird generiert
+
+4. NodeStructure.xml
+ - Dieses Informationsmodell war das erste vom IPK entworfen und ist dem des GESIs sehr nahe
+ - Dieses kann nicht vom Server eingelesen werden
+   - nicht konform zur XSD der OPCF von deren Website
+ - Dieses kann vom Adapter eingelesen werden
+   - die entsprechende LogFile wird generiert
+
+5. IPK_CNC.xml
+ - Dieses Informationsmodell wurde von Leonard Hackel erstellt für einen Anwendungsfall am IPK
+ - Dieses kann vom Server eingelesen werden
+   - Fehler beim Ändern der Werte
+   - IPK_CNC.xml definiert andere NodeIds usw. als letztendlich im Server implementiert
+ - Dieses kann vom Adapter eingelesen werden
+   - die entsprechende LogFile wird generiert
+
+6. IPK_Koffer.xml
+ - Dieses Informationsmodell wurde von Leonard Hackel erstellt für einen Anwendungsfall am IPK
+ - Dieses kann vom Server eingelesen werden
+   - teilweise Fehler beim Ändern der Werte
+   - IPK_Koffer.xml definiert andere NodeIds usw. als letztendlich im Server implementiert
+ - Dieses kann vom Adapter eingelesen werden
+   - die entsprechende LogFile wird generiert

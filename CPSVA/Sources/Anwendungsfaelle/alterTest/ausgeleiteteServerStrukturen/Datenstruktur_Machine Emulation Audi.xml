@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<UANodeSet xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+    <UAObject BrowseName="0:Root" NodeId="ns=0;i=84">
+        <DisplayName>Root</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent"/>
+            <Reference ReferenceType="HasComponent">ns=0;i=87</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=86</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=85</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="0:Views" NodeId="ns=0;i=87" ParentNodeId="ns=0;i=84">
+        <DisplayName>Views</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=84</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="0:Types" NodeId="ns=0;i=86" ParentNodeId="ns=0;i=84">
+        <DisplayName>Types</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=84</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=91</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=88</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=89</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=3048</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=90</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="0:ReferenceTypes" NodeId="ns=0;i=91" ParentNodeId="ns=0;i=86">
+        <DisplayName>ReferenceTypes</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=86</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="0:ObjectTypes" NodeId="ns=0;i=88" ParentNodeId="ns=0;i=86">
+        <DisplayName>ObjectTypes</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=86</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="0:VariableTypes" NodeId="ns=0;i=89" ParentNodeId="ns=0;i=86">
+        <DisplayName>VariableTypes</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=86</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="0:EventTypes" NodeId="ns=0;i=3048" ParentNodeId="ns=0;i=86">
+        <DisplayName>EventTypes</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=86</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="0:DataTypes" NodeId="ns=0;i=90" ParentNodeId="ns=0;i=86">
+        <DisplayName>DataTypes</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=86</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=93</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="0:OPC Binary" NodeId="ns=0;i=93" ParentNodeId="ns=0;i=90">
+        <DisplayName>OPC Binary</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=90</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="0:Objects" NodeId="ns=0;i=85" ParentNodeId="ns=0;i=84">
+        <DisplayName>Objects</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=84</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2253</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2001</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2042</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2072</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="0:Server" NodeId="ns=0;i=2253" ParentNodeId="ns=0;i=85">
+        <DisplayName>Server</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=85</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2254</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2255</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2267</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2994</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2256</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2268</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2274</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2295</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11492</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2296</Reference>
+        </References>
+    </UAObject>
+    <UAVariable BrowseName="0:ServerArray" NodeId="ns=0;i=2254" ParentNodeId="ns=0;i=2253">
+        <DisplayName>ServerArray</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2253</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:NamespaceArray" NodeId="ns=0;i=2255" ParentNodeId="ns=0;i=2253">
+        <DisplayName>NamespaceArray</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2253</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:ServiceLevel" NodeId="ns=0;i=2267" ParentNodeId="ns=0;i=2253">
+        <DisplayName>ServiceLevel</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2253</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:Auditing" NodeId="ns=0;i=2994" ParentNodeId="ns=0;i=2253">
+        <DisplayName>Auditing</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2253</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:ServerStatus" NodeId="ns=0;i=2256" ParentNodeId="ns=0;i=2253">
+        <DisplayName>ServerStatus</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2253</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2257</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2258</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2259</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2260</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2992</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2993</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:StartTime" NodeId="ns=0;i=2257" ParentNodeId="ns=0;i=2256">
+        <DisplayName>StartTime</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2256</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:CurrentTime" NodeId="ns=0;i=2258" ParentNodeId="ns=0;i=2256">
+        <DisplayName>CurrentTime</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2256</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:State" NodeId="ns=0;i=2259" ParentNodeId="ns=0;i=2256">
+        <DisplayName>State</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2256</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:BuildInfo" NodeId="ns=0;i=2260" ParentNodeId="ns=0;i=2256">
+        <DisplayName>BuildInfo</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2256</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2262</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2263</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2261</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2264</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2265</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2266</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:ProductUri" NodeId="ns=0;i=2262" ParentNodeId="ns=0;i=2260">
+        <DisplayName>ProductUri</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2260</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:ManufacturerName" NodeId="ns=0;i=2263" ParentNodeId="ns=0;i=2260">
+        <DisplayName>ManufacturerName</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2260</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:ProductName" NodeId="ns=0;i=2261" ParentNodeId="ns=0;i=2260">
+        <DisplayName>ProductName</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2260</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:SoftwareVersion" NodeId="ns=0;i=2264" ParentNodeId="ns=0;i=2260">
+        <DisplayName>SoftwareVersion</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2260</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:BuildNumber" NodeId="ns=0;i=2265" ParentNodeId="ns=0;i=2260">
+        <DisplayName>BuildNumber</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2260</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:BuildDate" NodeId="ns=0;i=2266" ParentNodeId="ns=0;i=2260">
+        <DisplayName>BuildDate</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2260</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:SecondsTillShutdown" NodeId="ns=0;i=2992" ParentNodeId="ns=0;i=2256">
+        <DisplayName>SecondsTillShutdown</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2256</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:ShutdownReason" NodeId="ns=0;i=2993" ParentNodeId="ns=0;i=2256">
+        <DisplayName>ShutdownReason</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2256</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="0:ServerCapabilities" NodeId="ns=0;i=2268" ParentNodeId="ns=0;i=2253">
+        <DisplayName>ServerCapabilities</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2253</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2269</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2271</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2272</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2735</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2737</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2736</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=3704</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2997</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2996</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11192</Reference>
+        </References>
+    </UAObject>
+    <UAVariable BrowseName="0:ServerProfileArray" NodeId="ns=0;i=2269" ParentNodeId="ns=0;i=2268">
+        <DisplayName>ServerProfileArray</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2268</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:LocaleIdArray" NodeId="ns=0;i=2271" ParentNodeId="ns=0;i=2268">
+        <DisplayName>LocaleIdArray</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2268</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:MinSupportedSampleRate" NodeId="ns=0;i=2272" ParentNodeId="ns=0;i=2268">
+        <DisplayName>MinSupportedSampleRate</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2268</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:MaxBrowseContinuationPoints" NodeId="ns=0;i=2735" ParentNodeId="ns=0;i=2268">
+        <DisplayName>MaxBrowseContinuationPoints</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2268</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:MaxHistoryContinuationPoints" NodeId="ns=0;i=2737" ParentNodeId="ns=0;i=2268">
+        <DisplayName>MaxHistoryContinuationPoints</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2268</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:MaxQueryContinuationPoints" NodeId="ns=0;i=2736" ParentNodeId="ns=0;i=2268">
+        <DisplayName>MaxQueryContinuationPoints</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2268</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:SoftwareCertificates" NodeId="ns=0;i=3704" ParentNodeId="ns=0;i=2268">
+        <DisplayName>SoftwareCertificates</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2268</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="0:AggregateFunctions" NodeId="ns=0;i=2997" ParentNodeId="ns=0;i=2268">
+        <DisplayName>AggregateFunctions</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2268</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="0:ModellingRules" NodeId="ns=0;i=2996" ParentNodeId="ns=0;i=2268">
+        <DisplayName>ModellingRules</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2268</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=78</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=80</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="0:Mandatory" NodeId="ns=0;i=78" ParentNodeId="ns=0;i=2996">
+        <DisplayName>Mandatory</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2996</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="0:Optional" NodeId="ns=0;i=80" ParentNodeId="ns=0;i=2996">
+        <DisplayName>Optional</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2996</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="0:HistoryServerCapabilities" NodeId="ns=0;i=11192" ParentNodeId="ns=0;i=2268">
+        <DisplayName>HistoryServerCapabilities</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2268</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11193</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11242</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11273</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11274</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11196</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11197</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11198</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11199</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11200</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11281</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11282</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11283</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11502</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11275</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11201</Reference>
+        </References>
+    </UAObject>
+    <UAVariable BrowseName="0:AccessHistoryDataCapability" NodeId="ns=0;i=11193" ParentNodeId="ns=0;i=11192">
+        <DisplayName>AccessHistoryDataCapability</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11192</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:AccessHistoryEventsCapability" NodeId="ns=0;i=11242" ParentNodeId="ns=0;i=11192">
+        <DisplayName>AccessHistoryEventsCapability</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11192</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:MaxReturnDataValues" NodeId="ns=0;i=11273" ParentNodeId="ns=0;i=11192">
+        <DisplayName>MaxReturnDataValues</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11192</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:MaxReturnEventValues" NodeId="ns=0;i=11274" ParentNodeId="ns=0;i=11192">
+        <DisplayName>MaxReturnEventValues</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11192</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:InsertDataCapability" NodeId="ns=0;i=11196" ParentNodeId="ns=0;i=11192">
+        <DisplayName>InsertDataCapability</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11192</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:ReplaceDataCapability" NodeId="ns=0;i=11197" ParentNodeId="ns=0;i=11192">
+        <DisplayName>ReplaceDataCapability</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11192</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:UpdateDataCapability" NodeId="ns=0;i=11198" ParentNodeId="ns=0;i=11192">
+        <DisplayName>UpdateDataCapability</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11192</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:DeleteRawCapability" NodeId="ns=0;i=11199" ParentNodeId="ns=0;i=11192">
+        <DisplayName>DeleteRawCapability</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11192</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:DeleteAtTimeCapability" NodeId="ns=0;i=11200" ParentNodeId="ns=0;i=11192">
+        <DisplayName>DeleteAtTimeCapability</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11192</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:InsertEventCapability" NodeId="ns=0;i=11281" ParentNodeId="ns=0;i=11192">
+        <DisplayName>InsertEventCapability</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11192</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:ReplaceEventCapability" NodeId="ns=0;i=11282" ParentNodeId="ns=0;i=11192">
+        <DisplayName>ReplaceEventCapability</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11192</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:UpdateEventCapability" NodeId="ns=0;i=11283" ParentNodeId="ns=0;i=11192">
+        <DisplayName>UpdateEventCapability</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11192</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:DeleteEventCapability" NodeId="ns=0;i=11502" ParentNodeId="ns=0;i=11192">
+        <DisplayName>DeleteEventCapability</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11192</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:InsertAnnotationCapability" NodeId="ns=0;i=11275" ParentNodeId="ns=0;i=11192">
+        <DisplayName>InsertAnnotationCapability</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11192</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="0:AggregateFunctions" NodeId="ns=0;i=11201" ParentNodeId="ns=0;i=11192">
+        <DisplayName>AggregateFunctions</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11192</Reference>
+        </References>
+    </UAObject>
+    <UAObject BrowseName="0:ServerDiagnostics" NodeId="ns=0;i=2274" ParentNodeId="ns=0;i=2253">
+        <DisplayName>ServerDiagnostics</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2253</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2294</Reference>
+            <Reference ReferenceType="HasComponent">ns=4;s=UpdateInterval</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2275</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2290</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=3706</Reference>
+        </References>
+    </UAObject>
+    <UAVariable BrowseName="0:EnabledFlag" NodeId="ns=0;i=2294" ParentNodeId="ns=0;i=2274">
+        <DisplayName>EnabledFlag</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2274</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="4:UpdateInterval" NodeId="ns=4;s=UpdateInterval" ParentNodeId="ns=0;i=2274">
+        <DisplayName>UpdateInterval</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2274</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:ServerDiagnosticsSummary" NodeId="ns=0;i=2275" ParentNodeId="ns=0;i=2274">
+        <DisplayName>ServerDiagnosticsSummary</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2274</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2276</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2277</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2278</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2279</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=3705</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2281</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2282</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2284</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2285</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2286</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2287</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=2288</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:ServerViewCount" NodeId="ns=0;i=2276" ParentNodeId="ns=0;i=2275">
+        <DisplayName>ServerViewCount</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2275</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:CurrentSessionCount" NodeId="ns=0;i=2277" ParentNodeId="ns=0;i=2275">
+        <DisplayName>CurrentSessionCount</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2275</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:CumulatedSessionCount" NodeId="ns=0;i=2278" ParentNodeId="ns=0;i=2275">
+        <DisplayName>CumulatedSessionCount</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2275</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:SecurityRejectedSessionCount" NodeId="ns=0;i=2279" ParentNodeId="ns=0;i=2275">
+        <DisplayName>SecurityRejectedSessionCount</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2275</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:RejectedSessionCount" NodeId="ns=0;i=3705" ParentNodeId="ns=0;i=2275">
+        <DisplayName>RejectedSessionCount</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2275</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:SessionTimeoutCount" NodeId="ns=0;i=2281" ParentNodeId="ns=0;i=2275">
+        <DisplayName>SessionTimeoutCount</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2275</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:SessionAbortCount" NodeId="ns=0;i=2282" ParentNodeId="ns=0;i=2275">
+        <DisplayName>SessionAbortCount</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2275</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:PublishingIntervalCount" NodeId="ns=0;i=2284" ParentNodeId="ns=0;i=2275">
+        <DisplayName>PublishingIntervalCount</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2275</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:CurrentSubscriptionCount" NodeId="ns=0;i=2285" ParentNodeId="ns=0;i=2275">
+        <DisplayName>CurrentSubscriptionCount</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2275</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:CumulatedSubscriptionCount" NodeId="ns=0;i=2286" ParentNodeId="ns=0;i=2275">
+        <DisplayName>CumulatedSubscriptionCount</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2275</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:SecurityRejectedRequestsCount" NodeId="ns=0;i=2287" ParentNodeId="ns=0;i=2275">
+        <DisplayName>SecurityRejectedRequestsCount</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2275</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:RejectedRequestsCount" NodeId="ns=0;i=2288" ParentNodeId="ns=0;i=2275">
+        <DisplayName>RejectedRequestsCount</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2275</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:SubscriptionDiagnosticsArray" NodeId="ns=0;i=2290" ParentNodeId="ns=0;i=2274">
+        <DisplayName>SubscriptionDiagnosticsArray</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2274</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="0:SessionsDiagnosticsSummary" NodeId="ns=0;i=3706" ParentNodeId="ns=0;i=2274">
+        <DisplayName>SessionsDiagnosticsSummary</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2274</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=3707</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=3708</Reference>
+        </References>
+    </UAObject>
+    <UAVariable BrowseName="0:SessionDiagnosticsArray" NodeId="ns=0;i=3707" ParentNodeId="ns=0;i=3706">
+        <DisplayName>SessionDiagnosticsArray</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=3706</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:SessionSecurityDiagnosticsArray" NodeId="ns=0;i=3708" ParentNodeId="ns=0;i=3706">
+        <DisplayName>SessionSecurityDiagnosticsArray</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=3706</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="0:VendorServerInfo" NodeId="ns=0;i=2295" ParentNodeId="ns=0;i=2253">
+        <DisplayName>VendorServerInfo</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2253</Reference>
+        </References>
+    </UAObject>
+    <UAMethod BrowseName="0:GetMonitoredItems" NodeId="ns=0;i=11492" ParentNodeId="ns=0;i=2253">
+        <DisplayName>GetMonitoredItems</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2253</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11493</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=11494</Reference>
+        </References>
+    </UAMethod>
+    <UAVariable BrowseName="0:InputArguments" NodeId="ns=0;i=11493" ParentNodeId="ns=0;i=11492">
+        <DisplayName>InputArguments</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11492</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="0:OutputArguments" NodeId="ns=0;i=11494" ParentNodeId="ns=0;i=11492">
+        <DisplayName>OutputArguments</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=11492</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="0:ServerRedundancy" NodeId="ns=0;i=2296" ParentNodeId="ns=0;i=2253">
+        <DisplayName>ServerRedundancy</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2253</Reference>
+            <Reference ReferenceType="HasComponent">ns=0;i=3709</Reference>
+        </References>
+    </UAObject>
+    <UAVariable BrowseName="0:RedundancySupport" NodeId="ns=0;i=3709" ParentNodeId="ns=0;i=2296">
+        <DisplayName>RedundancySupport</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=2296</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="3:Maschine" NodeId="ns=3;i=2001" ParentNodeId="ns=0;i=85">
+        <DisplayName>Maschine</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="Organizes">ns=0;i=85</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2002</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2017</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2023</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2031</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2038</Reference>
+        </References>
+    </UAObject>
+    <UAVariable BrowseName="3:Maschinenzustaende" NodeId="ns=3;i=2002" ParentNodeId="ns=3;i=2001">
+        <DisplayName>Maschinenzustaende</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2001</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2003</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2004</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2005</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2006</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2007</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2008</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2009</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2010</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2011</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2012</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2013</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2014</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2015</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2016</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:S01_Produktion_laeuft" NodeId="ns=3;i=2003" ParentNodeId="ns=3;i=2002">
+        <DisplayName>S01_Produktion_laeuft</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:S02_Warten_auf_Teil" NodeId="ns=3;i=2004" ParentNodeId="ns=3;i=2002">
+        <DisplayName>S02_Warten_auf_Teil</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:S03_Ausgang_belegt" NodeId="ns=3;i=2005" ParentNodeId="ns=3;i=2002">
+        <DisplayName>S03_Ausgang_belegt</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:S04_Technische_Stoerung" NodeId="ns=3;i=2006" ParentNodeId="ns=3;i=2002">
+        <DisplayName>S04_Technische_Stoerung</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:S05_Techn_Stoer_w_behoben" NodeId="ns=3;i=2007" ParentNodeId="ns=3;i=2002">
+        <DisplayName>S05_Techn_Stoer_w_behoben</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:S06_Organ_Stoerung" NodeId="ns=3;i=2008" ParentNodeId="ns=3;i=2002">
+        <DisplayName>S06_Organ_Stoerung</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:S07_Organ_stoer_w_behoben" NodeId="ns=3;i=2009" ParentNodeId="ns=3;i=2002">
+        <DisplayName>S07_Organ_stoer_w_behoben</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:S08_Werkzeug_defekt" NodeId="ns=3;i=2010" ParentNodeId="ns=3;i=2002">
+        <DisplayName>S08_Werkzeug_defekt</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:S09_Maschine_ein" NodeId="ns=3;i=2011" ParentNodeId="ns=3;i=2002">
+        <DisplayName>S09_Maschine_ein</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:S10_Maschine_aus" NodeId="ns=3;i=2012" ParentNodeId="ns=3;i=2002">
+        <DisplayName>S10_Maschine_aus</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:S11_Umruesten" NodeId="ns=3;i=2013" ParentNodeId="ns=3;i=2002">
+        <DisplayName>S11_Umruesten</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:S12_Zyklische_Taktz_verl" NodeId="ns=3;i=2014" ParentNodeId="ns=3;i=2002">
+        <DisplayName>S12_Zyklische_Taktz_verl</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:S13_Prod_veraendert" NodeId="ns=3;i=2015" ParentNodeId="ns=3;i=2002">
+        <DisplayName>S13_Prod_veraendert</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:S14_Standby" NodeId="ns=3;i=2016" ParentNodeId="ns=3;i=2002">
+        <DisplayName>S14_Standby</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2002</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Maschineinformation" NodeId="ns=3;i=2017" ParentNodeId="ns=3;i=2001">
+        <DisplayName>Maschineinformation</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2001</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2018</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2019</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2020</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2021</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2022</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Aktiv_Type_in_Station" NodeId="ns=3;i=2018" ParentNodeId="ns=3;i=2017">
+        <DisplayName>Aktiv_Type_in_Station</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2017</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Taktzeit_soll" NodeId="ns=3;i=2019" ParentNodeId="ns=3;i=2017">
+        <DisplayName>Taktzeit_soll</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2017</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Taktzeit_gesamt" NodeId="ns=3;i=2020" ParentNodeId="ns=3;i=2017">
+        <DisplayName>Taktzeit_gesamt</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2017</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Zaehler_gesamt" NodeId="ns=3;i=2021" ParentNodeId="ns=3;i=2017">
+        <DisplayName>Zaehler_gesamt</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2017</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Zaehler_gesamt_niO" NodeId="ns=3;i=2022" ParentNodeId="ns=3;i=2017">
+        <DisplayName>Zaehler_gesamt_niO</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2017</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Energieerfassung" NodeId="ns=3;i=2023" ParentNodeId="ns=3;i=2001">
+        <DisplayName>Energieerfassung</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2001</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2024</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2025</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2026</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2027</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2028</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2029</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2030</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Wirkleistung_kW" NodeId="ns=3;i=2024" ParentNodeId="ns=3;i=2023">
+        <DisplayName>Wirkleistung_kW</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2023</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Wirkenergie_kWh" NodeId="ns=3;i=2025" ParentNodeId="ns=3;i=2023">
+        <DisplayName>Wirkenergie_kWh</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2023</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Druckluft_Nm3" NodeId="ns=3;i=2026" ParentNodeId="ns=3;i=2023">
+        <DisplayName>Druckluft_Nm3</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2023</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Kuehlschmierstoff_dm3" NodeId="ns=3;i=2027" ParentNodeId="ns=3;i=2023">
+        <DisplayName>Kuehlschmierstoff_dm3</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2023</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Oel_dm3" NodeId="ns=3;i=2028" ParentNodeId="ns=3;i=2023">
+        <DisplayName>Oel_dm3</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2023</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Kuehlwasser_dm3" NodeId="ns=3;i=2029" ParentNodeId="ns=3;i=2023">
+        <DisplayName>Kuehlwasser_dm3</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2023</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Kaltwasser_dm3" NodeId="ns=3;i=2030" ParentNodeId="ns=3;i=2023">
+        <DisplayName>Kaltwasser_dm3</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2023</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Werkstoffdaten" NodeId="ns=3;i=2031" ParentNodeId="ns=3;i=2001">
+        <DisplayName>Werkstoffdaten</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2001</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2032</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2033</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2034</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2035</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2036</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2037</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Version_Nr[0]" NodeId="ns=3;i=2032" ParentNodeId="ns=3;i=2031">
+        <DisplayName>Version_Nr[0]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2031</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Version_Nr[1]" NodeId="ns=3;i=2033" ParentNodeId="ns=3;i=2031">
+        <DisplayName>Version_Nr[1]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2031</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Version_Nr[2]" NodeId="ns=3;i=2034" ParentNodeId="ns=3;i=2031">
+        <DisplayName>Version_Nr[2]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2031</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Version_Nr[3]" NodeId="ns=3;i=2035" ParentNodeId="ns=3;i=2031">
+        <DisplayName>Version_Nr[3]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2031</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Version_Nr[4]" NodeId="ns=3;i=2036" ParentNodeId="ns=3;i=2031">
+        <DisplayName>Version_Nr[4]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2031</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Version_Nr" NodeId="ns=3;i=2037" ParentNodeId="ns=3;i=2031">
+        <DisplayName>Version_Nr</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2031</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Kommunikation" NodeId="ns=3;i=2038" ParentNodeId="ns=3;i=2001">
+        <DisplayName>Kommunikation</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2001</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2039</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2041</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:PLC_to_Machine" NodeId="ns=3;i=2039" ParentNodeId="ns=3;i=2038">
+        <DisplayName>PLC-to_Machine</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2038</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2040</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Togglebit" NodeId="ns=3;i=2040" ParentNodeId="ns=3;i=2039">
+        <DisplayName>Togglebit</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2039</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Machine" NodeId="ns=3;i=2041" ParentNodeId="ns=3;i=2038">
+        <DisplayName>Machine_to_PLC</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2038</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2043</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Togglebit" NodeId="ns=3;i=2043" ParentNodeId="ns=3;i=2041">
+        <DisplayName>Togglebit</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2041</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="3:DataServer" NodeId="ns=3;i=2042" ParentNodeId="ns=0;i=85">
+        <DisplayName>DataServer</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=85</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2045</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2050</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2051</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2052</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2053</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2054</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2055</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2056</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2057</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2058</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2059</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2060</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2061</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2062</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2063</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2064</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2065</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2066</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2067</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2068</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2069</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2070</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2071</Reference>
+        </References>
+    </UAObject>
+    <UAVariable BrowseName="3:Costs" NodeId="ns=3;i=2045" ParentNodeId="ns=3;i=2042">
+        <DisplayName>Costs</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:ProtectionLevel" NodeId="ns=3;i=2050" ParentNodeId="ns=3;i=2042">
+        <DisplayName>ProtectionLevel</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Operator_ID" NodeId="ns=3;i=2051" ParentNodeId="ns=3;i=2042">
+        <DisplayName>Operator_ID</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Operator_ID[0]" NodeId="ns=3;i=2052" ParentNodeId="ns=3;i=2042">
+        <DisplayName>Operator_ID[0]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Operator_ID[1]" NodeId="ns=3;i=2053" ParentNodeId="ns=3;i=2042">
+        <DisplayName>Operator_ID[1]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Operator_ID[2]" NodeId="ns=3;i=2054" ParentNodeId="ns=3;i=2042">
+        <DisplayName>Operator_ID[2]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Operator_ID[3]" NodeId="ns=3;i=2055" ParentNodeId="ns=3;i=2042">
+        <DisplayName>Operator_ID[3]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Operator_ID[4]" NodeId="ns=3;i=2056" ParentNodeId="ns=3;i=2042">
+        <DisplayName>Operator_ID[4]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Operator_ID[5]" NodeId="ns=3;i=2057" ParentNodeId="ns=3;i=2042">
+        <DisplayName>Operator_ID[5]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Operator_ID[6]" NodeId="ns=3;i=2058" ParentNodeId="ns=3;i=2042">
+        <DisplayName>Operator_ID[6]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Operator_ID[7]" NodeId="ns=3;i=2059" ParentNodeId="ns=3;i=2042">
+        <DisplayName>Operator_ID[7]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:SafetyMode" NodeId="ns=3;i=2060" ParentNodeId="ns=3;i=2042">
+        <DisplayName>SafetyMode</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:SerialNumber" NodeId="ns=3;i=2061" ParentNodeId="ns=3;i=2042">
+        <DisplayName>SerialNumber</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:SerialNumber[1]" NodeId="ns=3;i=2062" ParentNodeId="ns=3;i=2042">
+        <DisplayName>SerialNumber[1]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:SerialNumber[2]" NodeId="ns=3;i=2063" ParentNodeId="ns=3;i=2042">
+        <DisplayName>SerialNumber[2]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:SerialNumber[3]" NodeId="ns=3;i=2064" ParentNodeId="ns=3;i=2042">
+        <DisplayName>SerialNumber[3]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:SerialNumber[4]" NodeId="ns=3;i=2065" ParentNodeId="ns=3;i=2042">
+        <DisplayName>SerialNumber[4]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:SerialNumber[5]" NodeId="ns=3;i=2066" ParentNodeId="ns=3;i=2042">
+        <DisplayName>SerialNumber[5]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:SerialNumber[6]" NodeId="ns=3;i=2067" ParentNodeId="ns=3;i=2042">
+        <DisplayName>SerialNumber[6]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:SerialNumber[7]" NodeId="ns=3;i=2068" ParentNodeId="ns=3;i=2042">
+        <DisplayName>SerialNumber[7]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:SerialNumber[8]" NodeId="ns=3;i=2069" ParentNodeId="ns=3;i=2042">
+        <DisplayName>SerialNumber[8]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:KeyAdapterReady" NodeId="ns=3;i=2070" ParentNodeId="ns=3;i=2042">
+        <DisplayName>KeyAdapterReady</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:KeyDetected" NodeId="ns=3;i=2071" ParentNodeId="ns=3;i=2042">
+        <DisplayName>KeyDetected</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2042</Reference>
+        </References>
+    </UAVariable>
+    <UAObject BrowseName="3:Meldungen" NodeId="ns=3;i=2072" ParentNodeId="ns=0;i=85">
+        <DisplayName>Meldungen</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=0;i=85</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2073</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2074</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2075</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2076</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2077</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2078</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2079</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2080</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2081</Reference>
+            <Reference ReferenceType="HasComponent">ns=3;i=2082</Reference>
+        </References>
+    </UAObject>
+    <UAVariable BrowseName="3:Fehlermeldungen" NodeId="ns=3;i=2073" ParentNodeId="ns=3;i=2072">
+        <DisplayName>Fehlermeldungen</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2072</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Fehlermeldungen[0]" NodeId="ns=3;i=2074" ParentNodeId="ns=3;i=2072">
+        <DisplayName>Fehlermeldungen[0]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2072</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Fehlermeldungen[2]" NodeId="ns=3;i=2075" ParentNodeId="ns=3;i=2072">
+        <DisplayName>Fehlermeldungen[2]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2072</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Fehlermeldungen[3]" NodeId="ns=3;i=2076" ParentNodeId="ns=3;i=2072">
+        <DisplayName>Fehlermeldungen[3]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2072</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Fehlermeldungen[1]" NodeId="ns=3;i=2077" ParentNodeId="ns=3;i=2072">
+        <DisplayName>Fehlermeldungen[1]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2072</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Meldungen" NodeId="ns=3;i=2078" ParentNodeId="ns=3;i=2072">
+        <DisplayName>Meldungen</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2072</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Meldungen[0]" NodeId="ns=3;i=2079" ParentNodeId="ns=3;i=2072">
+        <DisplayName>Meldungen[0]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2072</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Meldungen[1]" NodeId="ns=3;i=2080" ParentNodeId="ns=3;i=2072">
+        <DisplayName>Meldungen[1]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2072</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Meldungen[2]" NodeId="ns=3;i=2081" ParentNodeId="ns=3;i=2072">
+        <DisplayName>Meldungen[2]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2072</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable BrowseName="3:Meldungen[3]" NodeId="ns=3;i=2082" ParentNodeId="ns=3;i=2072">
+        <DisplayName>Meldungen[3]</DisplayName>
+        <References>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=3;i=2072</Reference>
+        </References>
+    </UAVariable>
+</UANodeSet>

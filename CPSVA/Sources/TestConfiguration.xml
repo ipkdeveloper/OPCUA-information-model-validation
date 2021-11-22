@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testconfiguration>
+    <testsystem>IOLink_edited_Prueffaelle</testsystem>
+    <guid>84ade7d5-f842-4e60-a520-49adfa136857</guid>
+    <ip>IPK376L</ip>
+    <port>48010</port>
+    <security>none</security>
+	<framework>opcf</framework>
+</testconfiguration>
