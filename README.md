@@ -5,6 +5,12 @@
 
 # OPCUA informationmodel ValidationAdapter
 
+## Pictures
+![concept_detailed](https://user-images.githubusercontent.com/83827677/149491215-196c68c5-e812-45a8-9de5-fabab7b66867.PNG)
+![model_von_nicht_itler](https://user-images.githubusercontent.com/83827677/149491241-021b3b88-6eff-41a0-8877-359782e24dcc.PNG)
+![figure_cpsva](https://user-images.githubusercontent.com/83827677/149491255-f560f143-fd89-4c84-bb1f-79595221b354.png)
+
+
 ## About the project
 The following project comprises of three main elements: The Validation Adapter, Deviation Analyser and an Emulation Server.
 
