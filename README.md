@@ -7,7 +7,7 @@
 
 ## Pictures
 
-<img src="https://user-images.githubusercontent.com/83827677/149491215-196c68c5-e812-45a8-9de5-fabab7b66867.PNG" width="500" height="300">
+<img src="https://user-images.githubusercontent.com/83827677/149491215-196c68c5-e812-45a8-9de5-fabab7b66867.PNG" width="400" height="300">
 
 <img src="https://user-images.githubusercontent.com/83827677/149491241-021b3b88-6eff-41a0-8877-359782e24dcc.PNG" width="500" height="300">
 
