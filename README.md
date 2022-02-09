@@ -36,7 +36,7 @@ The CPS VA is configured with the help of two configuration files ["AdapterConfi
 
 1. Start one of the Open Source Emulation Server solutions: [UAServerCPP/UAAnsiCServer](https://www.unified-automation.com/de/downloads/opc-ua-servers.html) (see below)
 
-2. Start the Validation Adapter
+2. Start the [Validation Adapter](https://github.com/ipkdeveloper/OPCUA-information-model-validation/tree/master/CPSVA) <br/>
 After the configuration for the next test run has been made via the [AdapterConfig.properties](https://github.com/ipkdeveloper/OPCUA-information-model-validation/blob/master/CPSVA/AdapterConfig.properties) and [TestConfiguration.xml](https://github.com/ipkdeveloper/OPCUA-information-model-validation/blob/master/CPSVA/TestConfiguration.xml) The validation is performed by executing the [ValidationAdapter.jar](https://github.com/ipkdeveloper/OPCUA-information-model-validation/blob/master/CPSVA/ValidationAdapter.jar).
 
 #### Evaluation and results
