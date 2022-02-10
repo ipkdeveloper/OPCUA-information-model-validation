@@ -5,5 +5,5 @@
     <ip>localhost</ip>
     <port>48010</port>
     <security>none</security>
-	<framework>opcf</framework>
+    <framework>opcf</framework>
 </testconfiguration>
