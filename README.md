@@ -1,4 +1,4 @@
-#
+# 
 <a href="https://www.ipk.fraunhofer.de/">
     <img src="https://www.ipk.fraunhofer.de/content/dam/ipk/IPK_Hauptseite/logos/logo-fraunhofer-ipk.png" align="right" height="60"  title="Fraunhofer IPK"/>
 </a>
